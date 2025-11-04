@@ -1,0 +1,22 @@
+# Pythonキャッシュ
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django関連
+*.log
+db.sqlite3
+/media/
+staticfiles/
+
+# 環境設定
+.env
+
+# VSCodeやIDE設定
+.vscode/
+.idea/
+
+# OS関連
+.DS_Store
+Thumbs.db

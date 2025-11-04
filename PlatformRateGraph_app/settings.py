@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 新規追加
+    'common', 
+    'intake_info',
+    'rate_graph',
 ]
 
 MIDDLEWARE = [
