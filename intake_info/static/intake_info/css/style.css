@@ -1,0 +1,80 @@
+body {
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: white;
+    padding: 50px 80px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type="number"],
+input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+button {
+    width: 250px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #8fd27a;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7cc86a;
+}
+
+/* CSVファイル選択ボタン（カスタム） */
+.file-input {
+    display: none;
+}
+
+.file-label {
+    display: inline-block;
+    width: 250px;
+    padding: 12px;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.file-label:hover {
+    background-color: #c9c9c9;
+}
+
+.messaeg {
+    color: green;
+    margin-top: 10px;
+}
+
