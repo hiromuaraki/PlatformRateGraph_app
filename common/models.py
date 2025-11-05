@@ -62,12 +62,7 @@ class Works(BaseModel):
 
 class WorkSeason(BaseModel):
     """作品シーズン情報"""
-    work = models.ForeignKey(
-        Works,
-        on_delete=models.CASCADE, # 親が削除された子も削除
-        verbose_name="作品",
-        related_name="work_season", # worksからwork_seasonへ逆参照できるように
-    )
+    season_delivery_cnt = models.IntegerField(verbose_name="シーズン配信件数", blank=False, null=False, default=0)
     year = models.CharField(max_length=4, verbose_name="放送年", null=False)
     season = models.CharField(max_length=2, verbose_name="シーズン", null=False) # ex: '春', '夏', '秋', '冬'
     
@@ -76,7 +71,7 @@ class WorkSeason(BaseModel):
         # 管理画面で表示
         verbose_name = "作品シーズン" # 単数形
         verbose_name_plural = "作品シーズン一覧" # 複数形
-        unique_together = ("work", "year", "season") # 同一作品・年・シーズンの重複防止
+        unique_together = ("year", "season") # 同一作品・年・シーズンの重複防止
 
 
 class PlatformInfo(BaseModel):
