@@ -21,7 +21,6 @@ h1 {
 }
 
 input[type="number"] {
-    width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -47,13 +46,11 @@ input[type="number"] {
 
 button {
     width: 100%;
-    /* background-color: #8ad36a; */
     color: #000;
     border: none;
     border-radius: 8px;
     padding: 12px;
     font-size: 16px;
-    /* cursor: pointer; */
     transition: opacity 0.3s;
 }
 

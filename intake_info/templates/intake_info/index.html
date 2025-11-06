@@ -15,7 +15,7 @@
         <h1>配信情報取込</h1>
 
         <!-- intake_info/templates/intake_info/index.html -->
-        <form method="post" enctype="multipart/form-data">
+        <form action="{% url 'form' %}" method="post" enctype="multipart/form-data">
             {% csrf_token %}
             {{ form.non_field_errors }}
 
@@ -23,7 +23,7 @@
             {{ form.season_delivery_cnt }}
 
             <!-- CSVファイル -->
-            <label for="csv-file" class="file-label">CSVファイルを選択</label>
+            <label for="csv-file" class="file-label">CSVファイル選択</label>
             {{ form.csv_file }}
             <div id="file-name"></div>
 
