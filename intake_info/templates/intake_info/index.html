@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>配信情報取り込み画面</title>
+    <link rel="stylesheet" href="{% static 'intake_info/css/style.css' %}" />
+    <script src="{% static 'intake_info/js/form_control.js' %}"></script>
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>配信情報取込</h1>
+
+        <!-- intake_info/templates/intake_info/index.html -->
+        <form action="{% url 'form' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.non_field_errors }}
+
+            <!-- シーズン件数 -->
+            {{ form.season_delivery_cnt }}
+
+            <!-- CSVファイル -->
+            <label for="csv-file" class="file-label">CSVファイル選択</label>
+            {{ form.csv_file }}
+            <div id="file-name"></div>
+
+            <!-- 送信ボタン -->
+            <button id="submit-btn" type="submit" disabled>取込</button>
+
+        </form>
+
+        {% if success %}
+        <p class="message">✅ 取込が完了しました！</p>
+        {% endif %}
+    </div>
+
+</body>
+
+</html>
