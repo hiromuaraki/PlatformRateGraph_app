@@ -11,41 +11,36 @@ from common.models import (
 )
 
 class IntakeInfoView(TemplateView):
+    template_name = "intake_info/index.html"
     
-    def __init__(self):
-        # フォームを設定
-        self.params = {
-            "success": False,
-            "form": IntakeInfoForm(),
-            
-        }
-
+    def get_context_data(self, **kwargs):
+        """共通のコンテキスト設定"""
+        context = super().get_context_data(**kwargs)
+        context["form"] = IntakeInfoForm()
+        context["success"] = False
+        return context
 
     def get(self, request):
         """GET時に呼び出し：画面設定"""
-        return render(request, "intake_info/index.html", self.params)
+        context = self.get_context_data()
+        return self.render_to_response(context)
 
     def post(self, request):
-        """POST時に呼び出し：取込処理実行"""
-        if request.method == "POST":
-            self.params["form"] = IntakeInfoForm(request.POST, request.FILES)
-            form = self.params["form"]
-            if form.is_valid():
-                # 検証済みデータの準備
-                csv_file = form.cleaned_data['csv_file']
-                count = form.cleaned_data['season_delivery_cnt']
+        """POST時：フォーム送信処理"""
+        form = IntakeInfoForm(request.POST, request.FILES)
+        context = self.get_context_data()
+        context["form"] = form
 
-                # ToDo CSVファイル取込処理を呼び出す
+        if form.is_valid():
+            csv_file = form.cleaned_data["csv_file"]
+            count = form.cleaned_data["season_delivery_cnt"]
 
-                # 取込処理成功
-                self.params["sccess"] = True
-                 # 空のフォームに初期化
-                self.params["form"] = IntakeInfoForm()
-                return render(request, "intake_info/index.html", self.params)
+            # TODO: CSVファイル取込処理呼び出し
 
-            else:
-                # 入力チェックNGの場合は同じフォームを再表示
-                return render(request, "intake_info/index.html", self.params)
-        # GETアクセスならindexへリダイレクト
-        return redirect("index")
+            # 成功フラグON & フォーム再初期化
+            context["success"] = True
+            context["form"] = IntakeInfoForm()
+
+        # 成否に関係なく再描画
+        return self.render_to_response(context)
     
