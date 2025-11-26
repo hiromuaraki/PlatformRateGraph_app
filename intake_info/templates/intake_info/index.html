@@ -13,7 +13,13 @@
 <body>
     <div class="container">
         <h1>配信情報取込</h1>
-
+        {% if messages %}
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            {% for message in messages %}
+            <p>{{message}}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
         <!-- intake_info/templates/intake_info/index.html -->
         <form action="{% url 'form' %}" method="post" enctype="multipart/form-data">
             {% csrf_token %}
@@ -31,10 +37,6 @@
             <button id="submit-btn" type="submit" disabled>取込</button>
 
         </form>
-
-        {% if success %}
-        <p class="message">✅ 取込が完了しました！</p>
-        {% endif %}
     </div>
 
 </body>

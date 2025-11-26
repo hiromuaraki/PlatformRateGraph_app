@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect
 from .forms import IntakeInfoForm
 from django.views.generic import TemplateView
-# from django.http import HttpResponse
+from django.contrib import messages
+from common import const
 
 from .services import intake_info_service as service
 
@@ -12,7 +13,6 @@ class IntakeInfoView(TemplateView):
         """共通のコンテキスト設定"""
         context = super().get_context_data(**kwargs)
         context["form"] = IntakeInfoForm()
-        context["success"] = False
         return context
 
     
@@ -33,16 +33,17 @@ class IntakeInfoView(TemplateView):
             count = form.cleaned_data["season_delivery_cnt"]
 
             # シーズンの配信件数をチェック
-            if not service.is_delivery_cnt(count): return
+            if not service.is_delivery_cnt(count):
+                messages.warning(request, f"最小の配信件数は[{const.MIN_SEASON_CNT}]件～です。")
+                return self.render_to_response(context)
             # 配信情報を取り出す
             item = service.read_csv(csv_file)
                 
             # TODO: 取込処理の開始
             if (service.intake_info(item)):
                 # 成功フラグON & フォーム再初期化
-                context["success"] = True
                 context["form"] = IntakeInfoForm()
-
+                messages.success(request, "✅取込が完了しました。")
         # 成否に関係なく再描画
         return self.render_to_response(context)
     
