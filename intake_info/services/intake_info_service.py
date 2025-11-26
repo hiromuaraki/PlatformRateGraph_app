@@ -1,5 +1,7 @@
 """取込処理やビジネスロジックをまとめたモジュール"""
 
+from common import const
+
 import csv
 from common.models import (
     PlatForms,
@@ -18,19 +20,20 @@ def read_csv(file_path) -> tuple:
     Returns:
 
     """
-
-    return ()
+    pass
     
 
 def is_delivery_cnt(season_delivery_cnt: int) -> bool:
     """
     配信件数入力チェック.（基本配信件数は50件以上）
     
-    Args:
+    Args: season_delivery_cnt：シーズン全配信件数
 
     Returns: True：適切な配信件数 False:不正な配信件数
-    
     """
+    if season_delivery_cnt < const.MIN_SEASON_CNT:
+        return False
+    return True
 
 # トランザクションの制御機能を要調査
 def intake_info(item) -> bool:
@@ -42,5 +45,5 @@ def intake_info(item) -> bool:
     Returns: True：登録成功 False:登録失敗
     
     """
-    return False
+    return True
 
