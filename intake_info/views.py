@@ -33,11 +33,11 @@ class IntakeInfoView(TemplateView):
             count = form.cleaned_data["season_delivery_cnt"]
 
             # シーズンの配信件数をチェック
-            if not service.is_delivery_cnt(count):
+            if service.is_delivery_cnt(count):
                 messages.warning(request, f"最小の配信件数は[{const.MIN_SEASON_CNT}]件～です。")
                 return self.render_to_response(context)
             # 配信情報を取り出す
-            item = service.read_csv(csv_file)
+            item = service.read_csv(request.FILES["csv_file"])
                 
             # TODO: 取込処理の開始
             if (service.intake_info(item)):

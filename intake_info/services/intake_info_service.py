@@ -1,8 +1,12 @@
 """取込処理やビジネスロジックをまとめたモジュール"""
 
 from common import const
-
-import csv
+from collections import (
+    defaultdict,
+    Counter
+)
+import csv, io
+import pandas as pd
 from common.models import (
     PlatForms,
     Works,
@@ -11,29 +15,51 @@ from common.models import (
     PlatformInfo
 )
 
-def read_csv(file_path) -> tuple:
+def read_csv(upload_file) -> dict:
     """
     CSVファイルを先頭から1行ずつ読み込み配信情報を取り出す.
 
-    Args:
+    Args: upload_file(取込CSVファイル)
+    
+    Returns: items, platforms_count
 
-    Returns:
+    itemsの中身：辞書型リスト{タイトル：[]}
+    row[1]:配信日
+    row[3]:タイトル
+    row[4]:プラットフォーム（複数）
+    row[6]:制作会社
+    row[7]:URL
 
     """
-    pass
+    items = defaultdict(list) # 重複タイトルは除く
+    try:
+        # バイナリファイルを文字列に変換
+        # text_file = io.TextIOWrapper(upload_file.file, encoding="utf-8")
+        # reader = csv.reader(text_file)
+        # 先頭行を飛ばしてCSVデータを読み込む
+        df = pd.DataFrame(upload_file)
+
+        for row in df:
+            # 対応付けするデータを設定
+            title = row[3]
+            staff = ("制作会社登録なし" if not row[6] else row[6])
+            items[title].append((
+                row[1] ,row[4] ,staff ,row[7]
+            ))
+
+        print(items)
+    except FileExistsError as e:
+        print(f"ファイルが存在しません。", e.errno)
+        
+
+    return items
     
 
 def is_delivery_cnt(season_delivery_cnt: int) -> bool:
     """
     配信件数入力チェック.（基本配信件数は50件以上）
-    
-    Args: season_delivery_cnt：シーズン全配信件数
-
-    Returns: True：適切な配信件数 False:不正な配信件数
     """
-    if season_delivery_cnt < const.MIN_SEASON_CNT:
-        return False
-    return True
+    return season_delivery_cnt < const.MIN_SEASON_CNT
 
 # トランザクションの制御機能を要調査
 def intake_info(item) -> bool:
