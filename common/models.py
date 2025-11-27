@@ -18,8 +18,8 @@ class PlatForms(BaseModel):
     
     class Meta:
         db_table = "platforms"
-        verbose_name = "配信プラットフォーム"
-        verbose_name_plural = "配信プラットフォーム一覧"
+        verbose_name = "PlatForm"
+        verbose_name_plural = "PlatForms"
     
 
     def __str__(self):
@@ -32,8 +32,8 @@ class Staffs(BaseModel):
     class Meta:
         db_table = "staffs" # dbを固定
         # 管理画面で表示
-        verbose_name = "制作会社" # される単数形
-        verbose_name_plural = "制作会社一覧" # 複数形
+        verbose_name = "Staff" # される単数形
+        verbose_name_plural = "Staffs" # 複数形
 
     def __str__(self):
         return self.organization_name
@@ -53,8 +53,8 @@ class Works(BaseModel):
     class Meta:
         db_table = "works" # dbを固定
         # 管理画面で表示
-        verbose_name = "作品" # 単数形
-        verbose_name_plural = "作品一覧" # 複数形
+        verbose_name = "Work" # 単数形
+        verbose_name_plural = "Works" # 複数形
 
     def __str__(self):
         return self.title
@@ -69,8 +69,8 @@ class WorkSeason(BaseModel):
     class Meta:
         db_table = "work_season" # dbを固定
         # 管理画面で表示
-        verbose_name = "作品シーズン" # 単数形
-        verbose_name_plural = "作品シーズン一覧" # 複数形
+        verbose_name = "WorkSeason" # 単数形
+        verbose_name_plural = "WorkSeason" # 複数形
         unique_together = ("year", "season") # 同一作品・年・シーズンの重複防止
 
 
@@ -96,6 +96,6 @@ class PlatformInfo(BaseModel):
     class Meta:
         db_table = "platform_info" # dbを固定
         # 管理画面で表示
-        verbose_name = "配信情報" # 単数形
-        verbose_name_plural = "配信情報一覧" # 複数形
+        verbose_name = "PlatformInfo" # 単数形
+        verbose_name_plural = "PlatformInfos" # 複数形
         unique_together = ("platform", "work_season")
