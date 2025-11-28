@@ -82,11 +82,12 @@ class PlatformInfo(BaseModel):
         verbose_name="配信プラットフォーム",
         related_name="platform_infos"
     )
-    work_season = models.ForeignKey(
-        WorkSeason,
+    work = models.ForeignKey(
+        Works,
         on_delete=models.CASCADE, # 親が削除された子も削除
-        verbose_name="作品シーズン",
-        related_name="platform_infos"
+        verbose_name="作品",
+        related_name="platform_infos",
+        null=True
     )
     delivery_start = models.DateField(verbose_name="配信開始日", null=True)
     delivery_end = models.DateField(verbose_name="配信終了日", null=True)
@@ -98,4 +99,4 @@ class PlatformInfo(BaseModel):
         # 管理画面で表示
         verbose_name = "PlatformInfo" # 単数形
         verbose_name_plural = "PlatformInfos" # 複数形
-        unique_together = ("platform", "work_season")
+        unique_together = ("platform", "work")
