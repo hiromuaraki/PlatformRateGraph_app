@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # 新規追加
-    'common', 
+    'common.apps.CommonConfig',
     'intake_info',
     'rate_graph',
 ]

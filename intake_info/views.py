@@ -30,17 +30,18 @@ class IntakeInfoView(TemplateView):
 
         if form.is_valid():
             csv_file = form.cleaned_data["csv_file"]
-            count = form.cleaned_data["season_delivery_cnt"]
+            season_delivery_cnt = form.cleaned_data["season_delivery_cnt"]
 
             # シーズンの配信件数をチェック
-            if not service.is_delivery_cnt(count):
+            if service.is_delivery_cnt(season_delivery_cnt):
                 messages.warning(request, f"最小の配信件数は[{const.MIN_SEASON_CNT}]件～です。")
                 return self.render_to_response(context)
-            # 配信情報を取り出す
-            item = service.read_csv(csv_file)
+            
+            # 配信情報/配信件数を取り出す
+            items, group_by_count = service.read_csv(csv_file)
                 
-            # TODO: 取込処理の開始
-            if (service.intake_info(item)):
+            # 取込処理の開始
+            if (service.intake_info(items, season_delivery_cnt, group_by_count)):
                 # 成功フラグON & フォーム再初期化
                 context["form"] = IntakeInfoForm()
                 messages.success(request, "✅取込が完了しました。")
