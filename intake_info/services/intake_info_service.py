@@ -61,7 +61,6 @@ def read_csv(upload_file) -> tuple:
                 if not platform: continue
                 # イコールにする為に前後の空白を削除
                 delivery_count[platform.strip()] += 1
-        print(items)
         print(delivery_count)
     except FileExistsError as e:
         # ある限りCSVファイルは毎期存在するのでこの処理には入らない想定だが保険の処理
@@ -112,6 +111,9 @@ def insert(items: dict, season_delivery_cnt: int, group_by_count: dict) -> bool:
             official_url=item["url"]
         )
 
+        # 配信開始日有の場合のみプラットフォーム情報を登録
+        if not item["delivery_date"]: continue
+        
         # 配信終了日は配信開始日＋3ヶ月に設定
         year, month, day = map(int, item["delivery_date"].split("/"))
         year, month = utils.new_years(year, month)
@@ -120,15 +122,15 @@ def insert(items: dict, season_delivery_cnt: int, group_by_count: dict) -> bool:
             # 配信情報一覧をを新規登録 or 既存レコード取得
             print(p.strip(), item["title"])
             p_form = p.strip()
-            # 配信情報あり重複しないデータのみ追加
-            if not p_form or p_form in st: continue
-            if not item["delivery_date"]: continue
+            # 配信情報あるデータのみ追加
+            if not p_form: continue
+            # if not p_form or p_form in st: continue
             platform_info, created = PlatformInfo.objects.get_or_create(
                 platform=PlatForms.objects.filter(name=p_form).first(),
                 work=work,
                 delivery_start=item["delivery_date"].replace("/", "-"),
                 delivery_end="{0}-{1:02d}-{2:02d}".format(year, month, day),
-                delivery_count=group_by_count[p]
+                delivery_count=group_by_count[p_form]
             )
             st.add(p_form)
     # DEBUG--------------------------
@@ -143,16 +145,12 @@ def intake_info(items: dict, season_delivery_cnt: int, gropu_by_count: dict) -> 
     """CSVデータをテーブルへ取込み."""
 
     try:
-        # [START] トランザクション開始-------------------------------------
+        # START トランザクション開始-------------------------------------
         with transaction.atomic():
-            success = insert(items, season_delivery_cnt, gropu_by_count)
-            raise ValueError("意図的に例外を発生させロールバックさせる。")
-
-        # [END  ] トランザクション終了-------------------------------------
+            return insert(items, season_delivery_cnt, gropu_by_count)
+        # END   トランザクション終了-------------------------------------
 
     except Exception as e:
         print("Rollback", e)
-        return False
-    
-    return success
+        return False 
 

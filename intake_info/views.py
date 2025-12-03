@@ -45,6 +45,9 @@ class IntakeInfoView(TemplateView):
                 # 成功フラグON & フォーム再初期化
                 context["form"] = IntakeInfoForm()
                 messages.success(request, "✅取込が完了しました。")
+            else:
+                messages.warning(request, "✖既に取込済みです。")
+
         # 成否に関係なく再描画
         return self.render_to_response(context)
     
