@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from .forms import IntakeInfoForm
 from django.views.generic import TemplateView
 from django.contrib import messages
-from common import const
+from common import const, utils
 from .services import intake_info_service as service
 
 class IntakeInfoView(TemplateView):
@@ -12,6 +12,8 @@ class IntakeInfoView(TemplateView):
         """共通のコンテキスト設定"""
         context = super().get_context_data(**kwargs)
         context["form"] = IntakeInfoForm()
+        context["title"] = "配信情報取込"
+        context["is_take"] = (False if utils.exists_work_season() else True)
         return context
 
     
@@ -43,6 +45,7 @@ class IntakeInfoView(TemplateView):
             if (service.intake_info(items, season_delivery_cnt, group_by_count)):
                 # フォーム再初期化
                 context["form"] = IntakeInfoForm()
+                context["is_take"] = True
                 messages.success(request, "✅取込が完了しました。")
             else:
                 messages.warning(request, "✖既に取込済みです。")

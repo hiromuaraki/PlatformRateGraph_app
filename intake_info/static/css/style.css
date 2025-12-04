@@ -63,3 +63,7 @@ button:disabled {
     margin-top: 20px;
     color: green;
 }
+
+p a.rate {
+    text-decoration: none;
+}
