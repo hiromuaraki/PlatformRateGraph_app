@@ -3,7 +3,6 @@ from .forms import IntakeInfoForm
 from django.views.generic import TemplateView
 from django.contrib import messages
 from common import const
-
 from .services import intake_info_service as service
 
 class IntakeInfoView(TemplateView):
@@ -42,7 +41,7 @@ class IntakeInfoView(TemplateView):
                 
             # 取込処理の開始
             if (service.intake_info(items, season_delivery_cnt, group_by_count)):
-                # 成功フラグON & フォーム再初期化
+                # フォーム再初期化
                 context["form"] = IntakeInfoForm()
                 messages.success(request, "✅取込が完了しました。")
             else:

@@ -2,7 +2,7 @@
 from django import forms
 
 class IntakeInfoForm(forms.Form):
-    """サーバーサイド側の検証チェッククラス"""
+    """フォームオブジェクト作成クラス"""
     season_delivery_cnt = forms.IntegerField(
         required=True, # 未入力チェック
         widget=forms.NumberInput(attrs={

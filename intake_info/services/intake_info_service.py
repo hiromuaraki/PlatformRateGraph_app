@@ -2,10 +2,7 @@
 
 from django.db import transaction
 from common import const, utils
-from collections import (
-    defaultdict,
-    Counter
-)
+from collections import defaultdict
 import csv, io
 from common.models import (
     PlatForms,
@@ -62,12 +59,11 @@ def read_csv(upload_file) -> tuple:
                 # イコールにする為に前後の空白を削除
                 delivery_count[platform.strip()] += 1
         print(delivery_count)
+        return items, delivery_count
     except FileExistsError as e:
         # ある限りCSVファイルは毎期存在するのでこの処理には入らない想定だが保険の処理
         print(f"ファイルが存在しません。", e.errno)
         return None
-        
-    return items, delivery_count
     
 
 def is_delivery_cnt(season_delivery_cnt: int) -> bool:
@@ -86,12 +82,11 @@ def insert(items: dict, season_delivery_cnt: int, group_by_count: dict) -> bool:
     存在する場合：既存レコード取得
     存在しない場合：新規レコード登録後、登録レコード取得
     """
-    st = set()
     # 作品シーズン情報を新規登録 or 既存レコード取得
     work_season, created = WorkSeason.objects.get_or_create(
         season_delivery_cnt=season_delivery_cnt,
         year=items[0]["delivery_date"][:4],
-        season=utils.get_season(items[0]["delivery_date"][5:7])
+        season=utils.get_season(int(items[0]["delivery_date"][5:7]))
     )
     
     # 既に作品シーズン情報があった場合は登録処理は行わない
@@ -124,7 +119,6 @@ def insert(items: dict, season_delivery_cnt: int, group_by_count: dict) -> bool:
             p_form = p.strip()
             # 配信情報あるデータのみ追加
             if not p_form: continue
-            # if not p_form or p_form in st: continue
             platform_info, created = PlatformInfo.objects.get_or_create(
                 platform=PlatForms.objects.filter(name=p_form).first(),
                 work=work,
@@ -132,13 +126,6 @@ def insert(items: dict, season_delivery_cnt: int, group_by_count: dict) -> bool:
                 delivery_end="{0}-{1:02d}-{2:02d}".format(year, month, day),
                 delivery_count=group_by_count[p_form]
             )
-            st.add(p_form)
-    # DEBUG--------------------------
-    print(WorkSeason.objects.all())
-    print(Staffs.objects.all())
-    print(Works.objects.all())
-    print(PlatformInfo.objects.all())
-    # DEBUG--------------------------
     return True
 
 def intake_info(items: dict, season_delivery_cnt: int, gropu_by_count: dict) -> bool:
