@@ -7,13 +7,13 @@
         
         <!-- ① Chart.js 本体（CDN） -->
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        
+        <!-- ラベルと割合をグラフに表示 -->
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
         {% comment %} bootstrapの読み込み {% endcomment %}
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
         rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     
-        <!-- ② pie_chart.js（静的ファイル） -->
-        <script src="{% static "js/pie_chart.js" %}"></script>
     </head>
 
     <body>
@@ -22,5 +22,9 @@
         {% comment %} PythonのデータをJSへ渡す {% endcomment %}
         {{ labels|json_script:"labels-data" }}
         {{ data|json_script:"chart-data" }}
+        {{ color|json_script:"chart-color" }}
+
+        <!-- ② pie_chart.js（静的ファイル） -->
+        <script src="{% static "js/pie_chart.js" %}?v={{version}}"></script>
     </body>
 </html>

@@ -65,7 +65,15 @@ def read_csv(upload_file) -> tuple:
         # ある限りCSVファイルは毎期存在するのでこの処理には入らない想定だが保険の処理
         print(f"ファイルが存在しません。", e.errno)
         return None
-    
+
+
+def exists_work_season() -> bool:
+    """WorkSeasonの存在チェック"""
+    now_year, now_month = utils.get_sysdate()[:2]
+    count = WorkSeason.objects.filter(year=now_year, 
+                season=utils.get_season(int(now_month)))
+    return len(count) == 0
+
 
 def is_delivery_cnt(season_delivery_cnt: int) -> bool:
     """
@@ -123,9 +131,7 @@ def insert(items: dict, season_delivery_cnt: int, group_by_count: dict) -> bool:
             platform_info, created = PlatformInfo.objects.get_or_create(
                 platform=PlatForms.objects.filter(name=p_form).first(),
                 work=work,
-                # delivery_start=item["delivery_date"].replace("/", "-"),
                 delivery_start=date(year, month, day),
-                # delivery_end="{0}-{1:02d}-{2:02d}".format(year, month, day),
                 delivery_end=date(new_year, new_month, day),
                 delivery_count=group_by_count[p_form]
             )

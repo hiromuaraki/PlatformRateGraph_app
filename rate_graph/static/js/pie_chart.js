@@ -1,35 +1,46 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const labels = JSON.parse(document.getElementById('labels-data').textContent);
-    const data = JSON.parse(document.getElementById('chart-data').textContent);
+    const labels = JSON.parse(document.getElementById("labels-data").textContent);
+    const data = JSON.parse(document.getElementById("chart-data").textContent).map(Number);
+    const colors = JSON.parse(document.getElementById("chart-color").textContent);
 
-    const ctx = document.getElementById('pieChart');
+    const ctx = document.getElementById("pieChart");
 
-    // 円グラフの描画の設定
     new Chart(ctx, {
-        type: 'pie',
+        type: "doughnut",
         data: {
             labels: labels,
             datasets: [{
-                data: data,
-                // backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0']
-                backgroundColor: [
-                    "#171616",
-                    "#f5b642",
-                    "#87a8e0",
-                    "#e3dcda",
-                    "#f26405",
-                    "#d61313",
-                    "#2006c7",
-                    "#73726e",
-                    "#fcde19",
-                    "#f5b642",
-                    "#b5a40b",
-                    "#383e45",
-                    "#56cc49",
-                    "#e8a274",
-                    "#2b2940"
-                ]
+                data: data,                 // ← Python が計算した割合
+                backgroundColor: colors,
             }]
+        },
+        plugins: [ChartDataLabels],
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            
+            plugins: {
+                legend: {
+                    position: "right",      // ← 凡例は右側へ（はみ出し防止）
+                },
+                datalabels: {
+                    color: "#fff",
+                    align: "center",
+                    anchor: "center",
+                    formatter: (value, context) => {
+                        const label = labels[context.dataIndex];
+                        const percent = value.toFixed(1);   // ← Python割合をそのまま使用
+                        return `${label}\n${percent}%`;     // ← 2 行表示
+                    },
+                    font: {
+                        size: 25,
+                        weight: "bold",
+                    },
+                    padding: 4,
+                    clamp: true,             // ← 円の外へ出さない
+                    clip: true,              // ← さらに円の内側に収める効果
+                }
+            }
         }
     });
 });

@@ -1,5 +1,4 @@
 from datetime import datetime
-from common.models import WorkSeason, PlatForms
 
 def get_sysdate() -> list:
     """現在の年月日を取得"""
@@ -26,13 +25,3 @@ def new_years(year: int, month: int) -> tuple:
     return year, month
 
 
-def exists_work_season() -> bool:
-    """WorkSeasonの存在チェック"""
-    now_year, now_month = get_sysdate()[:2]
-    count = WorkSeason.objects.filter(year=now_year, 
-                season=get_season(int(now_month)))
-    return len(count) == 0
-
-def get_label_list() -> list:
-    """プラットフォーム一覧を取得"""
-    return list(PlatForms.objects.all().order_by("id").values_list("name"))

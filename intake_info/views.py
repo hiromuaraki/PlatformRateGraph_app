@@ -13,7 +13,7 @@ class IntakeInfoView(TemplateView):
         context = super().get_context_data(**kwargs)
         context["form"] = IntakeInfoForm()
         context["title"] = "配信情報取込"
-        context["is_take"] = (False if utils.exists_work_season() else True)
+        context["is_take"] = (False if service.exists_work_season() else True)
         return context
 
     
