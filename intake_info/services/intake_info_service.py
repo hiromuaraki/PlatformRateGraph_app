@@ -4,6 +4,7 @@ from django.db import transaction
 from common import const, utils
 from collections import defaultdict
 import csv, io
+from datetime import date
 from common.models import (
     PlatForms,
     Works,
@@ -56,7 +57,7 @@ def read_csv(upload_file) -> tuple:
             # プラットフォームごとの配信件数を集計
             for platform in platforms:
                 if not platform: continue
-                # イコールにする為に前後の空白を削除
+                # 同じデータにする為に前後の空白を削除
                 delivery_count[platform.strip()] += 1
         print(delivery_count)
         return items, delivery_count
@@ -64,7 +65,15 @@ def read_csv(upload_file) -> tuple:
         # ある限りCSVファイルは毎期存在するのでこの処理には入らない想定だが保険の処理
         print(f"ファイルが存在しません。", e.errno)
         return None
-    
+
+
+def exists_work_season() -> bool:
+    """WorkSeasonの存在チェック"""
+    now_year, now_month = utils.get_sysdate()[:2]
+    count = WorkSeason.objects.filter(year=now_year, 
+                season=utils.get_season(int(now_month)))
+    return len(count) == 0
+
 
 def is_delivery_cnt(season_delivery_cnt: int) -> bool:
     """
@@ -111,7 +120,7 @@ def insert(items: dict, season_delivery_cnt: int, group_by_count: dict) -> bool:
         
         # 配信終了日は配信開始日＋3ヶ月に設定
         year, month, day = map(int, item["delivery_date"].split("/"))
-        year, month = utils.new_years(year, month)
+        new_year, new_month = utils.new_years(year, month)
 
         for p in item["platform"]:
             # 配信情報一覧をを新規登録 or 既存レコード取得
@@ -122,8 +131,8 @@ def insert(items: dict, season_delivery_cnt: int, group_by_count: dict) -> bool:
             platform_info, created = PlatformInfo.objects.get_or_create(
                 platform=PlatForms.objects.filter(name=p_form).first(),
                 work=work,
-                delivery_start=item["delivery_date"].replace("/", "-"),
-                delivery_end="{0}-{1:02d}-{2:02d}".format(year, month, day),
+                delivery_start=date(year, month, day),
+                delivery_end=date(new_year, new_month, day),
                 delivery_count=group_by_count[p_form]
             )
     return True
