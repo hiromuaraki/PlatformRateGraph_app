@@ -4,27 +4,98 @@
     <head>
         <meta charset="UTF-8">
         <title>{{title}}</title>
+        <!--Bootstrap CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         
         <!-- ① Chart.js 本体（CDN） -->
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <!-- ラベルと割合をグラフに表示 -->
         <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+        <style>
+            <!--PythonのデータをCSSで制御するのが手間なのでHTMLへ直書き-->
+            h1.select-color {
+                border-radius: 30px;
+                width: 600px;
+                padding: 20px;
+            }
 
-        {% comment %} bootstrapの読み込み {% endcomment %}
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-        rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    
+            h1 a {
+                color: #FFF;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+
+            table td.title {
+                width: 600px;
+
+            }
+
+            table td.left {
+                text-align: left;
+            }
+
+            table td.max-wid {
+                width: 150px;
+            }
+
+        </style>
     </head>
 
-    <body>
-        <canvas id="pieChart" width="300" height="300">1</canvas>
+    <body class="container d-flex flex-column align-items-center mt-4">
+        <h1 class="text-center mb-4">{{ title }}</h1>
+        <div class="mb-5" style="width: 1000px;">
+            <canvas id="pieChart" width="1000"></canvas>
+        </div>
+        <!--クリックイベント-->
+        <div id="detail-area" style="display:none; margin-top: 5px;"></div>
         
-        {% comment %} PythonのデータをJSへ渡す {% endcomment %}
+        <!--PythonのデータをJSへ渡す-->
         {{ labels|json_script:"labels-data" }}
         {{ data|json_script:"chart-data" }}
         {{ color|json_script:"chart-color" }}
 
         <!-- ② pie_chart.js（静的ファイル） -->
         <script src="{% static "js/pie_chart.js" %}?v={{version}}"></script>
+
+        <!-- 配信作品一覧テーブル -->
+        {% if works %}
+            {% if select %}
+                <h1 class="select-color" style="background-color: {{ select_color | safe }}; b">
+                    <a href="{{ platform.url }}" target="_blank">{{ select }}</a>
+                </h1>
+            {% endif %}
+            <table class="table table-striped table-bordered text-center mx-auto">
+                <thead class="table-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>配信日</th>
+                        <th>作品名</th>
+                        <th>制作会社</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for work in works %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td class="max-wid">
+                            {% if not work.platform_infos.first.is_deleted %}
+                                <div>{{ work.platform_infos.first.delivery_start|date:"Y-m-d" }}</div>
+                            {% else %}
+                                <div>配信情報なし</div>
+                            {% endif %}
+                        </td>
+                        <td class="title left"><a href="{{ work.official_url }}" target="_blank">{{ work.title }}</a></td>
+                        <td class="left">{{ work.staff.organization_name }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        
+        {% endif %}
+
     </body>
 </html>

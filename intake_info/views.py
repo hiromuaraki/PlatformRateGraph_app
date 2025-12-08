@@ -29,27 +29,31 @@ class IntakeInfoView(TemplateView):
         context = self.get_context_data()
         context["form"] = form
 
-        if form.is_valid():
-            csv_file = form.cleaned_data["csv_file"]
-            season_delivery_cnt = form.cleaned_data["season_delivery_cnt"]
+        if not form.is_valid():
+            return self.render_to_response(context)
+        csv_file = form.cleaned_data["csv_file"]
+        season_delivery_cnt = form.cleaned_data["season_delivery_cnt"]
 
-            # シーズンの配信件数をチェック
-            if service.is_delivery_cnt(season_delivery_cnt):
-                messages.warning(request, f"最小の配信件数は[{const.MIN_SEASON_CNT}]件～です。")
-                return self.render_to_response(context)
-            
-            # 配信情報/配信件数を取り出す
-            items, group_by_count = service.read_csv(csv_file)
-                
-            # 取込処理の開始
-            if (service.intake_info(items, season_delivery_cnt, group_by_count)):
-                # フォーム再初期化
-                context["form"] = IntakeInfoForm()
-                context["is_take"] = True
-                messages.success(request, "✅取込が完了しました。")
-            else:
-                messages.warning(request, "✖既に取込済みです。")
-
+        # シーズンの配信件数をチェック
+        if service.is_delivery_cnt(season_delivery_cnt):
+            return self._warn_and_render(request, context, f"最小の配信件数は[{const.MIN_SEASON_CNT}]件～です。")
+        
+        # 配信情報/配信件数を取り出す
+        items, group_by_count = service.read_csv(csv_file)
+        is_taken = service.intake_info(items, season_delivery_cnt, group_by_count)
+        
+        # 取込処理の開始
+        if is_taken:
+            # フォーム再初期化
+            messages.success(request, "✅取込が完了しました。")
+            context["form"] = IntakeInfoForm()
+            context["is_take"] = True
+        else:
+            messages.warning(request, "✖既に取込済みです。")
         # 成否に関係なく再描画
         return self.render_to_response(context)
-    
+
+    def _warn_and_render(self, request, context, message):
+        """メッセージ出して再描画するだけのヘルパー"""
+        messages.warning(request, message)
+        return self.render_to_response(context)

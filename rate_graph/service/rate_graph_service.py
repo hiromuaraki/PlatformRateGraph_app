@@ -6,8 +6,7 @@ from common.models import (
     WorkSeason,
     PlatformInfo,
     PlatForms,
-    Works,
-    Staffs
+    Works
 )
 
 def get_label_map() -> dict:
@@ -32,6 +31,22 @@ def get_current_season_data(current_date: date) -> list:
 
     return qs
 
+def get_platforms(platform_name: str):
+    """プラットフォームに紐づいた作品情報を取得."""
+    return PlatForms.objects.filter(name=platform_name)[0]
+
+def get_platform_id(platform_name: str):
+    """プラットフォームのIDを取得."""
+    return PlatForms.objects.filter(name=platform_name).values("id")[0]
+
+
+def get_platform_works(platform__name):
+    """"""
+    return Works.objects.filter(
+        platform_infos__platform__name=platform__name,
+        platform_infos__is_deleted=False
+    ).distinct()
+
 
 def calc_rate_map(qs: list, season_delivery_count: int) -> dict:
     """プラットフォームごとの配信件数の割合を計算する"""
@@ -42,7 +57,7 @@ def calc_rate_map(qs: list, season_delivery_count: int) -> dict:
         dic[season_data["platform_id"]] = calc_rate
     return dict(sorted(dic.items(), key=lambda item: item[1], reverse=True))
 
-def background_color_map():
+def background_color_map() -> dict:
     """プラットフォームごとの背景色のマップを返す."""
     # プラットフォームが増えた場合は適宜追加
     # 0-indexedに対応-1

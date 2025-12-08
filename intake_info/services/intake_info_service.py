@@ -64,15 +64,15 @@ def read_csv(upload_file) -> tuple:
     except FileExistsError as e:
         # ある限りCSVファイルは毎期存在するのでこの処理には入らない想定だが保険の処理
         print(f"ファイルが存在しません。", e.errno)
-        return None
+        return ()
 
 
 def exists_work_season() -> bool:
     """WorkSeasonの存在チェック"""
     now_year, now_month = utils.get_sysdate()[:2]
-    count = WorkSeason.objects.filter(year=now_year, 
-                season=utils.get_season(int(now_month)))
-    return len(count) == 0
+    return WorkSeason.objects.filter(year=now_year, 
+                season=utils.get_season(int(now_month))).exists()
+    
 
 
 def is_delivery_cnt(season_delivery_cnt: int) -> bool:
