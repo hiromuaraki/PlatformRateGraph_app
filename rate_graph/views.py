@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from common import utils
+from common import utils, const
 from datetime import date,time
 from .service import rate_graph_service as service
+from django.core.paginator import Paginator
 
 INFOS = {}
 # Create your views here.
@@ -18,10 +19,14 @@ def chart_view(request):
     calc_rate_map = service.calc_rate_map(season_data, season_delivery_count)
     color_map = service.background_color_map()
     
+    # プラットフォームごとの配信件数を取得
+    platform_count = service.platform_count()
+
     # グラフへ表示するデータ準備
     labels = [platform_map[key] for key in calc_rate_map]
     data = ["{:.2f}".format(value) for value in calc_rate_map.values()]
     color = [color_map[key - 1] for key in calc_rate_map]
+    p_count = [count["count"] for count in platform_count]
 
     # Chart.jsへ渡すデータ
     context = {
@@ -31,28 +36,30 @@ def chart_view(request):
         "version": time(), # .pie_chart.jsがキャッシュを読み込まなにようにするための設定
         "title": f"{year}年{utils.get_season(int(month))}アニメ：配信シェア",
         "select": "",
+        "p_count": p_count,
     }
     
     return render(request, "rate_graph/chart.html", context)
 
 def platform_info(request):
     global INFOS
-    platform_name = request.GET.get("platform")
-    works = None
+    platform_name = request.GET["platform"]
+    page_no = request.GET["page"]
+
     select_id = service.get_platform_id(platform_name)
     color = service.background_color_map()
     platform = service.get_platforms(platform_name)
+    
     # 配信情報のキャッシュ管理
-    if platform_name in INFOS:
-        works = INFOS[platform_name]
-    else:
-        works = service.get_platform_works(platform_name)
-        INFOS[platform_name] = []
-        INFOS[platform_name].append(works)
-
-    return render(request, "rate_graph/chart.html", {
+    if platform_name not in INFOS:
+        INFOS[platform_name] = service.get_platform_works(platform_name)
+    
+    qs = INFOS[platform_name]
+    
+    page = Paginator(qs, const.PARTATION_PAGE_NO)
+    return render(request, "rate_graph/platform_info.html", {
         "platform": platform,
-        "works": INFOS[platform_name][0],
+        "works":page.get_page(page_no),
         "select": platform_name,
         "select_color": color[select_id["id"] - 1]
     })

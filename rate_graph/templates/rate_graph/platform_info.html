@@ -1,0 +1,44 @@
+<div id="platform-info-block">
+
+    {% if works %}
+        
+        {% include "rate_graph/pagination.html" %}
+
+        {% if select %}
+        <h1 class="select-color" style="background-color: {{ select_color | safe }};">
+            <a href="{{ platform.url }}" target="_blank">{{ select }}</a>
+        </h1>
+        {% endif %}
+
+        <table class="table table-striped table-bordered text-center mx-auto">
+            <thead class="table-dark">
+                <tr>
+                    <th>#</th>
+                    <th>配信開始日</th>
+                    <th>作品名</th>
+                    <th>制作会社</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for work in works %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td class="max-wid">
+                        {% if not work.platform_infos.first.is_deleted %}
+                            <div>{{ work.platform_infos.first.delivery_start|date:"Y-m-d" }}</div>
+                        {% else %}
+                            <div>配信情報なし</div>
+                        {% endif %}
+                    </td>
+                    <td class="title left">
+                        <a href="{{ work.official_url }}" target="_blank">{{ work.title }}</a>
+                    </td>
+                    <td class="left">{{ work.staff.organization_name }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    {% endif %}
+
+</div>

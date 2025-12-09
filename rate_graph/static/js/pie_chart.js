@@ -1,16 +1,51 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // 例：画面下に挿入
+    const detail = document.getElementById("detail-area");
     const labels = JSON.parse(document.getElementById("labels-data").textContent);
     const data = JSON.parse(document.getElementById("chart-data").textContent).map(Number);
     const colors = JSON.parse(document.getElementById("chart-color").textContent);
+    const p_count = JSON.parse(document.getElementById("chart-p_count").textContent);
 
     const ctx = document.getElementById("pieChart");
+
+    // 先に読み込んでページ遷移しないようにしている
+    setupPaginationEvents();
+    
+    // DjangoのURL呼び出し（GET例）
+    function loadPlatformInfo(platformName, page = 1) {
+        console.log("loadPlatformInfoの実行");
+        fetch(`/rate_graph/platform_info/?platform=${encodeURIComponent(platformName)}&page=${page}`)
+            .then(res => res.text())
+            .then(html => {
+                detail.innerHTML = html;   // ページ切り替えなので = にするほうが自然
+                // ★ページネーションをJS化する★
+                setupPaginationEvents();
+            });
+    }
+
+    // ★ページネーションのリンクでページ遷移しないように制御
+    // Ajaxのページネーションのリンク時に必要
+    function setupPaginationEvents() {
+        document.querySelectorAll("#detail-area .page-link").forEach(a => {
+            a.addEventListener("click", function(e) {
+                e.preventDefault();  // 本来のページ遷移を止める
+            
+                const url = new URL(this.href);
+                const page = url.searchParams.get("page");
+                const platform = detail.dataset.current;
+                console.log(detail);
+            
+                loadPlatformInfo(platform, page);
+            });
+        });
+    }
 
     new Chart(ctx, {
         type: "doughnut",
         data: {
             labels: labels,
             datasets: [{
-                data: data, // ← Python で計算した割合
+                data: p_count,
                 backgroundColor: colors,
                 borderWidth: 2,
             }]
@@ -35,10 +70,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     align: "center",
                     anchor: "center",
                     formatter: (value, context) => {
-                        const label = labels[context.dataIndex];
+                        const index = context.dataIndex;
+                        const label = labels[index];
                         const short_label = label.length > 8 ? label.slice(0, 10) + "…" : label;
-                        const percent = value.toFixed(1);   // Python割合をそのまま使用
-                        return `${short_label}\n${percent}%`;
+                        const count = p_count[index];
+                        const percent = data[index];
+                        return `${short_label}(${count}件)\n${percent}%`;
                     },
                     // 割合が小さいほどフォントを小さくする
                     font: (ctx) => {
@@ -64,27 +101,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (!elements.length) return;
                 const index = elements[0].index;  // クリックしたセグメントの index
                 const platformName = labels[index];
-                
-                // 例：画面下に挿入
-                const detail = document.getElementById("detail-area");
 
-                // // すでに同じ内容を表示していたらデータ取得しない
+                //すでに同じ内容を表示していたらデータ取得しない
                 if (detail.dataset.current === platformName) {
                     return;
                 } 
-                
-                //  新しい内容を開く（先にinnerHTMLをリセット）
+                //  先にinnerHTMLをリセット
                 detail.innerHTML = "";
                 detail.style.display = "block";
                 detail.dataset.current = platformName;
-                // detail.innerHTML = `<h2>${platformName} の作品</h2>`;
-                
-                // DjangoのURL呼び出し（GET例）
-                fetch(`/rate_graph/platform_info/?platform=${encodeURIComponent(platformName)}`)
-                    .then(res => res.text())
-                    .then(html => {
-                        detail.innerHTML += html;   // HTMLを下に追加
-                    });
+                // 初回ロードは1ページ目を表示
+                loadPlatformInfo(platformName, 1);
             }
         }
     });
