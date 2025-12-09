@@ -27,6 +27,21 @@
                 text-decoration: none;
             }
 
+            #detail-area {
+                transition: opacity 0.25s ease-in-out;
+                opacity: 1;
+            }
+            
+            #detail-area.fade-out {
+                opacity: 0;
+            }
+
+
+            table.fixed {
+                width: 1000px;
+                table.fixed: fixed;
+            }
+
             table td.title {
                 width: 600px;
 
@@ -60,7 +75,5 @@
         <!-- ② pie_chart.js（静的ファイル） -->
         <script src="{% static "js/pie_chart.js" %}?v={{version}}"></script>
     </body>
-
-    
 
 </html>

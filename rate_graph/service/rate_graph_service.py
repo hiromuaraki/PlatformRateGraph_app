@@ -32,7 +32,7 @@ def get_current_season_data(current_date: date) -> list:
     return qs
 
 def get_platforms(platform_name: str):
-    """プラットフォームに紐づいた作品情報を取得."""
+    """プラットフォーム情報を取得."""
     return PlatForms.objects.filter(name=platform_name)[0]
 
 def get_platform_id(platform_name: str):

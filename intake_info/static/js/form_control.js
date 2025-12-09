@@ -38,14 +38,4 @@ document.addEventListener("DOMContentLoaded", function () {
         fileName.textContent = file ? file.name : "";
     });
 
-    // -----------------------------
-    // 4️⃣ フォーム送信時の動作（確認用）
-    // -----------------------------
-//     form.addEventListener("submit", (event) => {
-//         // ここはデバッグ目的なので、バックエンド連携時は削除してOK
-//         event.preventDefault();
-//         alert(`送信内容：
-// - 配信件数: ${input.value}
-// - ファイル名: ${fileInput.files[0] ? fileInput.files[0].name : "なし"}`);
-//     });
 });

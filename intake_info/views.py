@@ -1,4 +1,3 @@
-from django.shortcuts import render, redirect
 from .forms import IntakeInfoForm
 from django.views.generic import TemplateView
 from django.contrib import messages
@@ -25,8 +24,8 @@ class IntakeInfoView(TemplateView):
     
     def post(self, request):
         """POST時：フォーム送信処理"""
-        form = IntakeInfoForm(request.POST, request.FILES)
         context = self.get_context_data()
+        form = IntakeInfoForm(request.POST, request.FILES)
         context["form"] = form
 
         if not form.is_valid():
@@ -40,9 +39,9 @@ class IntakeInfoView(TemplateView):
         
         # 配信情報/配信件数を取り出す
         items, group_by_count = service.read_csv(csv_file)
+        # 取込処理の開始
         is_taken = service.intake_info(items, season_delivery_cnt, group_by_count)
         
-        # 取込処理の開始
         if is_taken:
             # フォーム再初期化
             messages.success(request, "✅取込が完了しました。")

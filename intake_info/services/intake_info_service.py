@@ -137,13 +137,13 @@ def insert(items: dict, season_delivery_cnt: int, group_by_count: dict) -> bool:
             )
     return True
 
-def intake_info(items: dict, season_delivery_cnt: int, gropu_by_count: dict) -> bool:
+def intake_info(items: dict, season_delivery_cnt: int, group_by_count: dict) -> bool:
     """CSVデータをテーブルへ取込み."""
 
     try:
         # START トランザクション開始-------------------------------------
         with transaction.atomic():
-            return insert(items, season_delivery_cnt, gropu_by_count)
+            return insert(items, season_delivery_cnt, group_by_count)
         # END   トランザクション終了-------------------------------------
 
     except Exception as e:

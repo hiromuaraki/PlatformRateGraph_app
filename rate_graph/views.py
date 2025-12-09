@@ -42,6 +42,7 @@ def chart_view(request):
     return render(request, "rate_graph/chart.html", context)
 
 def platform_info(request):
+    """配信情報一覧を表示させるデータの準備"""
     global INFOS
     platform_name = request.GET["platform"]
     page_no = request.GET["page"]
@@ -56,10 +57,11 @@ def platform_info(request):
     
     qs = INFOS[platform_name]
     
+    # ページネーションは10ページで分割
     page = Paginator(qs, const.PARTATION_PAGE_NO)
     return render(request, "rate_graph/platform_info.html", {
         "platform": platform,
-        "works":page.get_page(page_no),
+        "works": page.get_page(page_no),
         "select": platform_name,
         "select_color": color[select_id["id"] - 1]
     })

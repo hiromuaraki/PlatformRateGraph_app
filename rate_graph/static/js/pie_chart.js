@@ -14,12 +14,24 @@ document.addEventListener("DOMContentLoaded", () => {
     // DjangoのURL呼び出し（GET例）
     function loadPlatformInfo(platformName, page = 1) {
         console.log("loadPlatformInfoの実行");
+
+        // --- フェードアウト ---
+        detail.classList.add("fade-out");
+        
         fetch(`/rate_graph/platform_info/?platform=${encodeURIComponent(platformName)}&page=${page}`)
             .then(res => res.text())
             .then(html => {
-                detail.innerHTML = html;   // ページ切り替えなので = にするほうが自然
-                // ★ページネーションをJS化する★
-                setupPaginationEvents();
+                
+                setTimeout(() => {
+                    detail.innerHTML = html;   // ページ切り替えなので = にするほうが自然
+
+                    // ページネーション再設定
+                    setupPaginationEvents();
+
+                    // フェードイン
+                    detail.classList.remove("fade-out");
+
+                }, 200); // CSSと合わせて200〜250ms
             });
     }
 
@@ -104,14 +116,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 //すでに同じ内容を表示していたらデータ取得しない
                 if (detail.dataset.current === platformName) {
+                    setTimeout(() => {
+                        detail.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }, 50);
                     return;
                 } 
-                //  先にinnerHTMLをリセット
-                detail.innerHTML = "";
                 detail.style.display = "block";
                 detail.dataset.current = platformName;
                 // 初回ロードは1ページ目を表示
-                loadPlatformInfo(platformName, 1);
+                loadPlatformInfo(platformName);
+
+                setTimeout(() => {
+                    detail.scrollIntoView({ behavior: "smooth", block: "start" });
+                }, 300);  // フェードアウト→フェードインに少し時間を合わせる
             }
         }
     });
