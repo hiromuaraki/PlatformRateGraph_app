@@ -1,5 +1,5 @@
 import common.utils as utils
-from django.db.models import Max
+from django.db.models import Max, Count
 from collections import defaultdict
 from datetime import date
 from common.models import (
@@ -41,11 +41,15 @@ def get_platform_id(platform_name: str):
 
 
 def get_platform_works(platform__name):
-    """"""
+    """プラットフォームごとの配信情報を取得."""
     return Works.objects.filter(
         platform_infos__platform__name=platform__name,
         platform_infos__is_deleted=False
-    ).distinct()
+    ).distinct().order_by("id")
+
+def platform_count():
+    """プラットフォームごとの配信件数を取得."""
+    return PlatformInfo.objects.values("platform_id").annotate(count=Count("id")).order_by("count").reverse()
 
 
 def calc_rate_map(qs: list, season_delivery_count: int) -> dict:
