@@ -1,7 +1,7 @@
 from .forms import IntakeInfoForm
 from django.views.generic import TemplateView
 from django.contrib import messages
-from common import const, utils
+from common import const
 from .services import intake_info_service as service
 
 class IntakeInfoView(TemplateView):

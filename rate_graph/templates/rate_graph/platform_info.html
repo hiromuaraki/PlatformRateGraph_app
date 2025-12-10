@@ -1,8 +1,6 @@
 <div id="platform-info-block">
 
     {% if works %}
-        
-        {% include "rate_graph/pagination.html" %}
 
         {% if select %}
         <h1 class="select-color" style="background-color: {{ select_color | safe }};">
@@ -13,10 +11,10 @@
         <table class="table table-striped table-bordered text-center mx-auto fixed">
             <thead class="table-dark">
                 <tr>
-                    <th>#</th>
-                    <th>配信開始日</th>
-                    <th>作品名</th>
-                    <th>制作会社</th>
+                    <th class="font">#</th>
+                    <th class="font">配信開始日</th>
+                    <th class="font">作品名</th>
+                    <th class="font">制作会社</th>
                 </tr>
             </thead>
             <tbody>
@@ -38,7 +36,7 @@
                 {% endfor %}
             </tbody>
         </table>
-
+        {% include "rate_graph/pagination.html" %}
     {% endif %}
 
 </div>

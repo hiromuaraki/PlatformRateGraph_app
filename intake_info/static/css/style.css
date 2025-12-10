@@ -9,13 +9,14 @@ body {
 
 .container {
     background: white;
-    padding: 40px 60px;
+    padding: 60px 40px;
     border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     text-align: center;
+    width: 320px;
 }
 h1 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-size: 28px;
     font-weight: bold;
 }
@@ -59,11 +60,22 @@ button:disabled {
     cursor: not-allowed;
 }
 
-.message {
-    margin-top: 20px;
-    color: green;
-}
 
 p a.rate {
     text-decoration: none;
+}
+
+.notification {
+    background: #333;
+    color: #fff;
+    width: 200px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+}
+
+.notification.show {
+    opacity: 1;
+    transform: translateY(0);
 }

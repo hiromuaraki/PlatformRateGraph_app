@@ -17,11 +17,22 @@
                 border-radius: 30px;
                 width: 600px;
                 padding: 20px;
+                margin-bottom: 40px;
             }
 
             h1 a {
                 color: #FFF;
             }
+
+            h1.title {
+                background-color: #000;
+                width: 600px;
+                height: 100px;
+                color: #FFF;
+                padding: 20px;
+                border-radius: 20px;
+            }
+
             
             a {
                 text-decoration: none;
@@ -55,13 +66,18 @@
                 width: 150px;
             }
 
+            table th.font {
+                height: 40px;
+                font-size: 25px;
+            }
+
         </style>
     </head>
 
     <body class="container d-flex flex-column align-items-center mt-4">
-        <h1 class="text-center mb-4">{{ title }}</h1>
-        <div class="mb-5" style="width: 1000px;">
-            <canvas id="pieChart" width="1000"></canvas>
+        <h1 class="text-center mb-5 title">{{ title }}</h1>
+        <div class="mb-5" style="width: 800px;">
+            <canvas id="pieChart" width="800"></canvas>
         </div>
         <!--クリックイベント-->
         <div id="detail-area" style="display:none;"></div>

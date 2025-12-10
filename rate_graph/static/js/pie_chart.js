@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
             plugins: {
                 // 凡例の表示設定
                 legend: {
-                    display: true ,
+                    display: false , // 非表示
                     position: "top",
                     labels: {
                         font: {size: 20},
