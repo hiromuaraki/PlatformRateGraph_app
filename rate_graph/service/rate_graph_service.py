@@ -15,8 +15,11 @@ def get_label_map() -> dict:
 
 def get_season_delivery_count(year: int, month: int) -> int:
     """シーズン配信件数を取得"""
-    return WorkSeason.objects.filter(
-        year=year, season=utils.get_season(int(month)))[0].season_delivery_cnt
+    qs = WorkSeason.objects.filter(
+        year=year, season=utils.get_season(int(month))).first()
+    if qs is None:
+        return 0
+    return qs.season_delivery_cnt
 
 
 def get_current_season_data(current_date: date) -> list:
