@@ -21,8 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-5&_gd5x8s9mmba@cef-_4iq8sk0sxacyts_9*hqut2eacd9e-t'
-SECRET_KEY = os.environ.get("SECRET_KEY")
+# SECRET_KEY = 'django-insecure-5&_gd5x8s9mmba@cef-_4iq8sk0sxacyts_9*hqut2eacd9e-t' # 開発（ローカル）
+SECRET_KEY = os.environ.get("SECRET_KEY") # 本番（Webサーバ）
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True # 開発時
@@ -124,8 +124,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
 STATIC_ROOT = BASE_DIR / "staticfiles"
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 
 # Default primary key field type
