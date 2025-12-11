@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: PlatformRateGraph_app
+    env: python
+    buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --noinput"
+    startCommand: "gunicorn PlatformRateGraph_app.wsgi"
+    envVars:
+      PYTHON_VERSION: 3.12.4
