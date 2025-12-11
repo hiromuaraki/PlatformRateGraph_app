@@ -1,0 +1,1 @@
+web: gunicorn PlatformRateGraph_app.wsgi
