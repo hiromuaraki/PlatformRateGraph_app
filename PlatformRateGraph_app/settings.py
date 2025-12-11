@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # DEBUG = True # 開発時
 DEBUG = False  # 本番時
 
-ALLOWED_HOSTS = ["localhost", ".onrender.com"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
