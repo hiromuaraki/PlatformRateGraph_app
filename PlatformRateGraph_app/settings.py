@@ -25,8 +25,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY") # 本番（Webサーバ）
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True # 開発時
-DEBUG = False  # 本番時
+DEBUG = True # 開発時
+# DEBUG = False  # 本番時
 
 # ALLOWED_HOSTS = ["*"]
 ALLOWED_HOSTS = ["platformrategraph-app.onrender.com", "localhost"]
