@@ -28,7 +28,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY") # 本番（Webサーバ）
 # DEBUG = True # 開発時
 DEBUG = False  # 本番時
 
-ALLOWED_HOSTS = ["*"]
+# ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["platformrategraph-app.onrender.com", "localhost"]
 
 
 # Application definition
