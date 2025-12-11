@@ -3,6 +3,6 @@ services:
     name: PlatformRateGraph_app
     env: python
     buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --noinput"
-    startCommand: "gunicorn PlatformRateGraph_app.wsgi"
+    startCommand: "gunicorn PlatformRateGraph_app.wsgi:application --bind 0.0.0.0:$PORT"
     envVars:
       PYTHON_VERSION: 3.11.6
