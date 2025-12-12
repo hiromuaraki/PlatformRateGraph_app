@@ -62,7 +62,7 @@ def read_csv(upload_file) -> tuple:
         print(delivery_count)
         return items, delivery_count
     except FileExistsError as e:
-        # ある限りCSVファイルは毎期存在するのでこの処理には入らない想定だが保険の処理
+        # CSVファイルは毎期存在するのでこの処理には入らない想定だが保険の処理
         print(f"ファイルが存在しません。", e.errno)
         return ()
 
@@ -91,15 +91,18 @@ def insert(items: dict, season_delivery_cnt: int, group_by_count: dict) -> bool:
     存在する場合：既存レコード取得
     存在しない場合：新規レコード登録後、登録レコード取得
     """
-    # 作品シーズン情報を新規登録 or 既存レコード取得
-    work_season, created = WorkSeason.objects.get_or_create(
+    # 作品シーズンが存在した場合は今期データ取込済みの為データ登録しない設計
+    if exists_work_season(): return False
+
+    # get_or_create先に登録処理が走り制約違反エラーとなる為、createへ変更
+    work_season = WorkSeason.objects.create(
         season_delivery_cnt=season_delivery_cnt,
         year=items[0]["delivery_date"][:4],
         season=utils.get_season(int(items[0]["delivery_date"][5:7]))
     )
     
-    # 既に作品シーズン情報があった場合は登録処理は行わない
-    if not created: return False
+    # 作品シーズンの登録が成功した場合のみ今期データの登録処理
+    if not work_season: return False
     
     for item in items:
         # 制作会社を新規登録 or 既存レコード取得
@@ -109,7 +112,6 @@ def insert(items: dict, season_delivery_cnt: int, group_by_count: dict) -> bool:
 
         # 作品を新規登録 or 既存レコード取得
         work, created = Works.objects.get_or_create(
-            # staff=staff.id,
             staff=staff,
             title=item["title"],
             official_url=item["url"]
@@ -118,7 +120,7 @@ def insert(items: dict, season_delivery_cnt: int, group_by_count: dict) -> bool:
         # 配信開始日有の場合のみプラットフォーム情報を登録
         if not item["delivery_date"]: continue
         
-        # 配信終了日は配信開始日＋3ヶ月に設定
+        # 配信終了日は配信開始日＋3ヶ月に設定（クールが3か月ごとに切り替わる為）
         year, month, day = map(int, item["delivery_date"].split("/"))
         new_year, new_month = utils.new_years(year, month)
 

@@ -36,11 +36,11 @@ def get_current_season_data(current_date: date) -> list:
 
 def get_platforms(platform_name: str):
     """プラットフォーム情報を取得."""
-    return PlatForms.objects.filter(name=platform_name)[0]
+    return PlatForms.objects.filter(name=platform_name).first()
 
 def get_platform_id(platform_name: str):
     """プラットフォームのIDを取得."""
-    return PlatForms.objects.filter(name=platform_name).values("id")[0]
+    return PlatForms.objects.filter(name=platform_name).values("id").first()
 
 
 def get_platform_works(platform__name):

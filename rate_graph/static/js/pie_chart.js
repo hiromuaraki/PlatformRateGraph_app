@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // DjangoのURL呼び出し（GET例）
     function loadPlatformInfo(platformName, page = 1) {
-        console.log("loadPlatformInfoの実行");
 
         // --- フェードアウト ---
         detail.classList.add("fade-out");
@@ -55,8 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
     new Chart(ctx, {
         type: "doughnut",
         data: {
-            labels: labels,
             datasets: [{
+                labels: labels,
                 data: p_count,
                 backgroundColor: colors,
                 borderWidth: 2,
@@ -84,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     formatter: (value, context) => {
                         const index = context.dataIndex;
                         const label = labels[index];
-                        const short_label = label.length > 8 ? label.slice(0, 10) + "…" : label;
+                        const short_label = label.length > 7 ? label.slice(0, 8) + "…" : label;
                         const count = p_count[index];
                         const percent = data[index];
                         return `${short_label}(${count}件)\n${percent}%`;
@@ -92,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     // 割合が小さいほどフォントを小さくする
                     font: (ctx) => {
                         const v = data[ctx.dataIndex];
-                        
+
                         // 10%未満 → 小さい
                         if (v < 10) return { size: 7, weight: "bold" };
                         
@@ -100,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         if (v < 20) return { size: 20, weight: "bold"};
                                                 
                         // 20%以上 → 標準
-                        return { size: 25, weight: "bold" };
+                        return { size: 20, weight: "bold" };
 
                     },
                     padding: 6,

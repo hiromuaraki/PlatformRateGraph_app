@@ -52,10 +52,10 @@ def platform_info(request):
     platform = service.get_platforms(platform_name)
     
     # 配信情報のキャッシュ管理
-    if platform_name not in INFOS:
-        INFOS[platform_name] = service.get_platform_works(platform_name)
+    if select_id["id"] not in INFOS:
+        INFOS[select_id["id"]] = service.get_platform_works(platform_name)
     
-    qs = INFOS[platform_name]
+    qs = INFOS[select_id["id"]]
     
     # ページネーションは10ページで分割
     page = Paginator(qs, const.PARTATION_PAGE_NO)

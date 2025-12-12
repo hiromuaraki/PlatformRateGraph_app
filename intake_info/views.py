@@ -12,7 +12,7 @@ class IntakeInfoView(TemplateView):
         context = super().get_context_data(**kwargs)
         context["form"] = IntakeInfoForm()
         context["title"] = "配信情報取込"
-        context["is_take"] = (False if service.exists_work_season() else True)
+        context["is_take"] = (True if service.exists_work_season() else False)
         return context
 
     
@@ -40,9 +40,9 @@ class IntakeInfoView(TemplateView):
         # 配信情報/配信件数を取り出す
         items, group_by_count = service.read_csv(csv_file)
         # 取込処理の開始
-        is_taken = service.intake_info(items, season_delivery_cnt, group_by_count)
+        is_take = service.intake_info(items, season_delivery_cnt, group_by_count)
         
-        if is_taken:
+        if is_take:
             # フォーム再初期化
             messages.success(request, "✅取込が完了しました。")
             context["form"] = IntakeInfoForm()

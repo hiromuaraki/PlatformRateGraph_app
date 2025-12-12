@@ -28,7 +28,6 @@ SECRET_KEY = 'django-insecure-5&_gd5x8s9mmba@cef-_4iq8sk0sxacyts_9*hqut2eacd9e-t
 DEBUG = True # 開発時
 # DEBUG = False  # 本番時
 
-# ALLOWED_HOSTS = ["*"]
 ALLOWED_HOSTS = ["platformrategraph-app.onrender.com", "localhost"]
 
 
@@ -112,9 +111,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = "ja"
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tokyo'
 
 USE_I18N = True
 
