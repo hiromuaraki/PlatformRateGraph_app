@@ -24,7 +24,7 @@ def chart_view(request):
 
     # グラフへ表示するデータ準備
     labels = [platform_map[key] for key in calc_rate_map]
-    data = ["{:.2f}".format(value) for value in calc_rate_map.values()]
+    data = ["{:.1f}".format(value) for value in calc_rate_map.values()]
     color = [color_map[key - 1] for key in calc_rate_map]
     p_count = [count["count"] for count in platform_count]
 
