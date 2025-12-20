@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // --- フェードアウト ---
         detail.classList.add("fade-out");
-        
+        // 非同期処理（WebAPIを利用しPython側のviews.pygからデータ結果を受け取っている）※Ajaxではない
         fetch(`/rate_graph/platform_info/?platform=${encodeURIComponent(platformName)}&page=${page}`)
             .then(res => res.text())
             .then(html => {
@@ -52,59 +52,60 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     new Chart(ctx, {
-        type: "doughnut",
+        type: "bar",
         data: {
+            labels: labels,
             datasets: [{
-                labels: labels,
-                data: p_count,
+                data: data,
                 backgroundColor: colors,
-                borderWidth: 2,
+                borderWidth: 1,
+                barThickness: 40,        // ← 固定幅（px）
+                maxBarThickness: 50,     // ← 最大幅
+                categoryPercentage: 0.7,// ← カテゴリ幅に対する割合
+                barPercentage: 0.9,     // ← その中での棒の割合
             }]
-        },
-        // 円グラフの内側のラベルの表示
-        plugins: [ChartDataLabels],
-        options: {
-            responsive: false,
-            maintainAspectRatio: false,
-            
-            plugins: {
-                // 凡例の表示設定
-                legend: {
-                    display: false , // 非表示
-                    position: "top",
-                    labels: {
-                        font: {size: 20},
+            },
+            // 棒グラフの内側のラベルの表示
+            plugins: [ChartDataLabels],
+            options: {
+                responsive: false,
+                maintainAspectRatio: false,
+
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: (value) => value + "%"
+                        },
+                        title: {
+                            display: true,
+                            text: "配信比率（%）"
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            font: { size: 10 }
+                        }
                     }
                 },
+
+                plugins: {
+                legend: {
+                    display: false,
+                },
                 datalabels: {
-                    color: "#fff",
-                    align: "center",
-                    anchor: "center",
+                    anchor: "end",
+                    align: "top",
+                    color: "#000",
                     formatter: (value, context) => {
                         const index = context.dataIndex;
-                        const label = labels[index];
-                        const short_label = label.length > 7 ? label.slice(0, 8) + "…" : label;
                         const count = p_count[index];
-                        const percent = data[index];
-                        return `${short_label}(${count}件)\n${percent}%`;
+                        return `${value}%\n(${count}件)`;
                     },
-                    // 割合が小さいほどフォントを小さくする
-                    font: (ctx) => {
-                        const v = data[ctx.dataIndex];
-
-                        // 10%未満 → 小さい
-                        if (v < 10) return { size: 7, weight: "bold" };
-                        
-                        // 20%未満 → 少し小さめ
-                        if (v < 20) return { size: 20, weight: "bold"};
-                                                
-                        // 20%以上 → 標準
-                        return { size: 20, weight: "bold" };
-
-                    },
-                    padding: 6,
-                    clamp: true,             // ← 円の外へ出さない
-                    clip: true,              // ← さらに円の内側に収める効果
+                    font: {
+                        size: 15,
+                        weight: "bold"
+                    }
                 }
             },
             // ★★★ クリックイベント ★★★
