@@ -34,7 +34,7 @@ def chart_view(request):
         "data": data,
         "color": color,
         "version": time(), # .pie_chart.jsがキャッシュを読み込まなにようにするための設定
-        "title": f"{year}年{utils.get_season(int(month))}アニメ：配信シェア",
+        "title": f"{year}年{utils.get_season(int(month))}アニメ：配信比率",
         "select": "",
         "p_count": p_count,
     }
