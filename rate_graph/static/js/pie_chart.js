@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     },
                     x: {
                         ticks: {
-                            font: { size: 10 }
+                            font: { size: 11 }
                         }
                     }
                 },

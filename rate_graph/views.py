@@ -14,19 +14,18 @@ def chart_view(request):
     
     # 現在の月日を準備（date型と比較用）
     current_date = date(year, month, day)
+
     season_data = service.get_current_season_data(current_date)
     # 割合の計算結果のリスト
     calc_rate_map = service.calc_rate_map(season_data, season_delivery_count)
     color_map = service.background_color_map()
-    
-    # プラットフォームごとの配信件数を取得
-    platform_count = service.platform_count()
 
     # グラフへ表示するデータ準備
     labels = [platform_map[key] for key in calc_rate_map]
     data = ["{:.1f}".format(value) for value in calc_rate_map.values()]
     color = [color_map[key - 1] for key in calc_rate_map]
-    p_count = [count["count"] for count in platform_count]
+    p_count = [count for key, count in season_data.items()]
+    p_count.sort(reverse=True)
 
     # Chart.jsへ渡すデータ
     context = {

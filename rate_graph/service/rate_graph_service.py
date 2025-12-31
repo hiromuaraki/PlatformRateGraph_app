@@ -22,17 +22,20 @@ def get_season_delivery_count(year: int, month: int) -> int:
     return qs.season_delivery_cnt
 
 
-def get_current_season_data(current_date: date) -> list:
+def get_current_season_data(current_date: date) -> dict:
     """現在のシーズンデータを取得"""
-    # platform_id ごとに delivery_count を 1つだけ取得
-    qs = PlatformInfo.objects.filter(
-        delivery_start__lte=current_date,
-        delivery_end__gte=current_date
-    ).values("platform_id").annotate(
-        delivery_count=Max("delivery_count")
-    ).order_by("platform_id")
+    qs = PlatformInfo.objects.filter(batch_key=utils.get_current_batch_key(current_date))
+    result = defaultdict(int)
+    st_cnt = set()
+    for p in qs:
+        st_cnt.add((p.platform_id, p.delivery_count))
+    
+    for key, delivery_count in st_cnt:
+        # delivery_count は 1作品ごとに1度だけ足す
+        result[key] += delivery_count
 
-    return qs
+    return result
+
 
 def get_platforms(platform_name: str):
     """プラットフォーム情報を取得."""
@@ -45,23 +48,22 @@ def get_platform_id(platform_name: str):
 
 def get_platform_works(platform__name):
     """プラットフォームごとの配信情報を取得."""
+    sysdate = utils.get_sysdate()
+    current_date = date(sysdate[0], sysdate[1], sysdate[2])
     return Works.objects.filter(
+        batch_key=utils.get_current_batch_key(current_date),
         platform_infos__platform__name=platform__name,
         platform_infos__is_deleted=False
     ).distinct().order_by("id")
 
-def platform_count():
-    """プラットフォームごとの配信件数を取得."""
-    return PlatformInfo.objects.values("platform_id").annotate(count=Count("id")).order_by("count").reverse()
 
-
-def calc_rate_map(qs: list, season_delivery_count: int) -> dict:
+def calc_rate_map(qs: dict, season_delivery_count: int) -> dict:
     """プラットフォームごとの配信件数の割合を計算する"""
     dic = defaultdict(float)
     
-    for season_data in qs:
-        calc_rate = (season_data["delivery_count"] / season_delivery_count) * 100
-        dic[season_data["platform_id"]] = calc_rate
+    for key, delivery_count in qs.items():
+        calc_rate = (delivery_count / season_delivery_count) * 100
+        dic[key] = calc_rate
     return dict(sorted(dic.items(), key=lambda item: item[1], reverse=True))
 
 def background_color_map() -> dict:
@@ -84,5 +86,6 @@ def background_color_map() -> dict:
        12: "#56cc49",
        13: "#e8a274",
        14: "#2b2940",
-       15: "#FFFFFF"
+       15: "#FFFFFF",
+       16: "#ab0c2e",
     }

@@ -5,7 +5,14 @@ class BaseModel(models.Model):
      """全モデルで共通して使用する基本クラス"""
      created_at = models.DateTimeField(auto_now_add=True, verbose_name="作成日時") # 登録日時 登録時に一度だけ設定
      updated_at = models.DateTimeField(auto_now=True, verbose_name="更新日時") # 更新日時 
+    
 
+     batch_key = models.CharField(
+        max_length=20,
+        db_index=True,
+        default="legacy",
+        verbose_name="登録バッチ識別子"
+    )
      class Meta:
         abstract = True  # 継承専用モデル（DBテーブルを作らない）
 

@@ -3,6 +3,7 @@
 from django.db import transaction
 from common import const, utils
 from collections import defaultdict
+from dateutil.relativedelta import relativedelta
 import csv, io
 from datetime import date
 from common.models import (
@@ -92,51 +93,67 @@ def insert(items: dict, season_delivery_cnt: int, group_by_count: dict) -> bool:
     存在しない場合：新規レコード登録後、登録レコード取得
     """
     # 作品シーズンが存在した場合は今期データ取込済みの為データ登録しない設計
-    if exists_work_season(): return False
-
+    if exists_work_season():
+        return False
+    
+    # バッチ年を設定
+    batch_year = items[0]["delivery_date"][:4]
+    delivery_date = items[0]["delivery_date"].split("/")
+    batch_date = date(batch_year, delivery_date[1], delivery_date[2])
+    batch_key = utils.get_current_batch_key(batch_date)
+    
     # get_or_create先に登録処理が走り制約違反エラーとなる為、createへ変更
     work_season = WorkSeason.objects.create(
         season_delivery_cnt=season_delivery_cnt,
-        year=items[0]["delivery_date"][:4],
-        season=utils.get_season(int(items[0]["delivery_date"][5:7]))
+        year=batch_year,
+        season=utils.get_season(int(batch_date.month)),
+        batch_key=batch_key
     )
     
     # 作品シーズンの登録が成功した場合のみ今期データの登録処理
-    if not work_season: return False
+    if not work_season:
+        return False
     
     for item in items:
         # 制作会社を新規登録 or 既存レコード取得
         staff, created = Staffs.objects.get_or_create(
-            organization_name=item["staff"]
+            organization_name=item["staff"],
+            defaults={"batch_key": batch_key}
         )
 
         # 作品を新規登録 or 既存レコード取得
         work, created = Works.objects.get_or_create(
             staff=staff,
             title=item["title"],
-            official_url=item["url"]
+            official_url=item["url"],
+            defaults={"batch_key": batch_key}
         )
 
         # 配信開始日有の場合のみプラットフォーム情報を登録
-        if not item["delivery_date"]: continue
+        if not item["delivery_date"]:
+            continue
         
+        start = date(batch_date.year, batch_date.month, batch_date.day)
         # 配信終了日は配信開始日＋3ヶ月に設定（クールが3か月ごとに切り替わる為）
-        year, month, day = map(int, item["delivery_date"].split("/"))
-        new_year, new_month = utils.new_years(year, month)
-
+        end = start + relativedelta(month=+3)
+        
         for p in item["platform"]:
             # 配信情報一覧をを新規登録 or 既存レコード取得
             print(p.strip(), item["title"])
             p_form = p.strip()
             # 配信情報あるデータのみ追加
-            if not p_form: continue
+            if not p_form:
+                continue
+            
             platform_info, created = PlatformInfo.objects.get_or_create(
                 platform=PlatForms.objects.filter(name=p_form).first(),
                 work=work,
-                delivery_start=date(year, month, day),
-                delivery_end=date(new_year, new_month, day),
-                delivery_count=group_by_count[p_form]
+                delivery_start=start,
+                delivery_end=end,
+                delivery_count=group_by_count[p_form],
+                defaults={"batch_key": batch_key}
             )
+            
     return True
 
 def intake_info(items: dict, season_delivery_cnt: int, group_by_count: dict) -> bool:

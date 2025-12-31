@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, date
 
 def get_sysdate() -> list:
     """現在の年月日を取得"""
@@ -15,13 +15,10 @@ def get_season(month: int) -> str:
     elif month in (10, 11 ,12): return "秋"
     else: return "冬"
 
-def new_years(year: int, month: int) -> tuple:
-    """年をまたぐかを判定し3か月後の年・月を設定し返す."""
-    if month < 10:
-        month += 3
-    else:
-        year += 1
-        month = (month + 3) % 12
-    return year, month
+def get_current_batch_key(today: date) -> str:
+    """バッチキーを動的に作成"""
+    year = today.year
+    quarter = (today.month - 1) // 3 + 1
+    return f"{year}Q{quarter}"
 
 
