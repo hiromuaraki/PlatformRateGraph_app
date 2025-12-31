@@ -13,6 +13,86 @@
 },
 {
   "model": "common.staffs",
+  "pk": 8,
+  "fields": {
+    "created_at": "2025-12-05T12:30:37.954Z",
+    "updated_at": "2025-12-05T12:30:37.955Z",
+    "batch_key": "legacy",
+    "organization_name": "J.C.STAFF"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 19,
+  "fields": {
+    "created_at": "2025-12-05T12:31:39.094Z",
+    "updated_at": "2025-12-05T12:31:39.094Z",
+    "batch_key": "legacy",
+    "organization_name": "OLM"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 26,
+  "fields": {
+    "created_at": "2025-12-05T12:31:49.071Z",
+    "updated_at": "2025-12-05T12:31:49.071Z",
+    "batch_key": "legacy",
+    "organization_name": "MAPPA"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 31,
+  "fields": {
+    "created_at": "2025-12-05T12:31:57.664Z",
+    "updated_at": "2025-12-05T12:31:57.664Z",
+    "batch_key": "legacy",
+    "organization_name": "ボンズフィルム"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 38,
+  "fields": {
+    "created_at": "2025-12-05T12:32:13.452Z",
+    "updated_at": "2025-12-05T12:32:13.452Z",
+    "batch_key": "legacy",
+    "organization_name": "スタジオディーン"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 39,
+  "fields": {
+    "created_at": "2025-12-05T12:32:14.288Z",
+    "updated_at": "2025-12-05T12:32:14.288Z",
+    "batch_key": "legacy",
+    "organization_name": "サンライズ"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 41,
+  "fields": {
+    "created_at": "2025-12-05T12:32:16.438Z",
+    "updated_at": "2025-12-05T12:32:16.438Z",
+    "batch_key": "legacy",
+    "organization_name": "スタジオKAI"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 45,
+  "fields": {
+    "created_at": "2025-12-05T12:32:34.148Z",
+    "updated_at": "2025-12-05T12:32:34.148Z",
+    "batch_key": "legacy",
+    "organization_name": "月虹"
+  }
+},
+{
+  "model": "common.staffs",
   "pk": 53,
   "fields": {
     "created_at": "2025-12-31T15:55:49.856Z",

@@ -34,7 +34,7 @@ def batch_script():
     works = Works.objects.filter(id__in=works_ids, batch_key=batch_key)
     
     staffs_ids = works.values_list("staff_id", flat=True).distinct()
-    staffs = Staffs.objects.filter(id__in=staffs_ids, batch_key=batch_key)
+    staffs = Staffs.objects.filter(id__in=staffs_ids)
     
     work_seasons = WorkSeason.objects.filter(batch_key=batch_key)
 
