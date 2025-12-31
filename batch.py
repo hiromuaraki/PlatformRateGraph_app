@@ -38,7 +38,7 @@ def batch_script():
     
     work_seasons = WorkSeason.objects.filter(batch_key=batch_key)
 
-    platforms = PlatForms.objects.filter(batch_key=batch_key)
+    platforms = PlatForms.objects.all()
     # すべてをまとめる
     all_objs = list(platforms) + list(work_seasons) + list(staffs) + list(works) + list(platform_infos)
     

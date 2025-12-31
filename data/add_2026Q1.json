@@ -1,5 +1,192 @@
 [
 {
+  "model": "common.platforms",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-12-05T12:13:18.048Z",
+    "updated_at": "2025-12-05T12:13:18.048Z",
+    "batch_key": "legacy",
+    "name": "ABEMA",
+    "url": "https://abema.tv/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 2,
+  "fields": {
+    "created_at": "2025-12-05T12:14:54.430Z",
+    "updated_at": "2025-12-05T12:14:54.430Z",
+    "batch_key": "legacy",
+    "name": "dアニメストア",
+    "url": "https://animestore.docomo.ne.jp/animestore/tp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 3,
+  "fields": {
+    "created_at": "2025-12-05T12:15:51.306Z",
+    "updated_at": "2025-12-05T12:15:51.306Z",
+    "batch_key": "legacy",
+    "name": "Prime Video",
+    "url": "https://www.amazon.co.jp/gp/video/storefront"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 4,
+  "fields": {
+    "created_at": "2025-12-05T12:16:28.995Z",
+    "updated_at": "2025-12-05T12:16:28.995Z",
+    "batch_key": "legacy",
+    "name": "U-NEXT",
+    "url": "https://video.unext.jp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 5,
+  "fields": {
+    "created_at": "2025-12-05T12:17:04.856Z",
+    "updated_at": "2025-12-05T12:17:04.856Z",
+    "batch_key": "legacy",
+    "name": "Netflix",
+    "url": "https://www.netflix.com/jp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 6,
+  "fields": {
+    "created_at": "2025-12-05T12:17:38.049Z",
+    "updated_at": "2025-12-05T12:17:38.049Z",
+    "batch_key": "legacy",
+    "name": "DMM TV",
+    "url": "https://tv.dmm.com/vod/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 7,
+  "fields": {
+    "created_at": "2025-12-05T12:18:11.231Z",
+    "updated_at": "2025-12-05T12:18:11.231Z",
+    "batch_key": "legacy",
+    "name": "アニメタイムズ",
+    "url": "https://animetimes.co.jp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 8,
+  "fields": {
+    "created_at": "2025-12-05T12:18:58.187Z",
+    "updated_at": "2025-12-05T12:18:58.187Z",
+    "batch_key": "legacy",
+    "name": "dアニメストア for Prime Video",
+    "url": "https://www.amazon.co.jp/gp/video/channel/0246cb84-8f43-4c17-ac1f-2bfe85893c23"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 9,
+  "fields": {
+    "created_at": "2025-12-05T12:19:35.524Z",
+    "updated_at": "2025-12-05T12:19:35.524Z",
+    "batch_key": "legacy",
+    "name": "Lemino",
+    "url": "http://lemino.docomo.ne.jp"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 10,
+  "fields": {
+    "created_at": "2025-12-05T12:20:15.713Z",
+    "updated_at": "2025-12-05T12:20:15.713Z",
+    "batch_key": "legacy",
+    "name": "AnimeFesta",
+    "url": "https://animefesta.iowl.jp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 11,
+  "fields": {
+    "created_at": "2025-12-05T12:20:40.762Z",
+    "updated_at": "2025-12-05T12:20:40.762Z",
+    "batch_key": "legacy",
+    "name": "アニメ放題",
+    "url": "https://www.animehodai.jp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 12,
+  "fields": {
+    "created_at": "2025-12-05T12:21:07.205Z",
+    "updated_at": "2025-12-05T12:21:07.205Z",
+    "batch_key": "legacy",
+    "name": "Hulu",
+    "url": "https://www.hulu.jp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 13,
+  "fields": {
+    "created_at": "2025-12-05T12:21:37.799Z",
+    "updated_at": "2025-12-05T12:21:37.799Z",
+    "batch_key": "legacy",
+    "name": "Disney+（ディズニープラス）",
+    "url": "https://disneyplus.disney.co.jp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 14,
+  "fields": {
+    "created_at": "2025-12-05T12:22:03.622Z",
+    "updated_at": "2025-12-05T12:22:03.622Z",
+    "batch_key": "legacy",
+    "name": "FOD",
+    "url": "https://fod.fujitv.co.jp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 15,
+  "fields": {
+    "created_at": "2025-12-05T12:22:34.165Z",
+    "updated_at": "2025-12-05T12:22:34.165Z",
+    "batch_key": "legacy",
+    "name": "TVer",
+    "url": "https://tver.jp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 16,
+  "fields": {
+    "created_at": "2025-12-05T12:23:16.286Z",
+    "updated_at": "2025-12-05T12:23:16.286Z",
+    "batch_key": "legacy",
+    "name": "バンダイチャンネル",
+    "url": "https://www.b-ch.com/?srsltid=AfmBOoriugg30w2gzPznbECLYtNPhXM2muleBgiNCV3f7LA5SQy79z22"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 17,
+  "fields": {
+    "created_at": "2025-12-31T15:12:45.193Z",
+    "updated_at": "2025-12-31T15:12:45.193Z",
+    "batch_key": "legacy",
+    "name": "YouTube",
+    "url": "https://www.youtube.com/"
+  }
+},
+{
   "model": "common.workseason",
   "pk": 2,
   "fields": {
