@@ -30,9 +30,9 @@ def get_current_season_data(current_date: date) -> dict:
     for p in qs:
         st_cnt.add((p.platform_id, p.delivery_count))
     
-    for key, delivery_count in st_cnt:
+    for p_id, delivery_count in st_cnt:
         # delivery_count は 1作品ごとに1度だけ足す
-        result[key] += delivery_count
+        result[p_id] += delivery_count
 
     return result
 
@@ -47,14 +47,14 @@ def get_platform_id(platform_name: str):
 
 
 def get_platform_works(platform__name):
-    """プラットフォームごとの配信情報を取得."""
+    """プラットフォームごとの配信情報を配信日が早い順に取得."""
     sysdate = utils.get_sysdate()
     current_date = date(sysdate[0], sysdate[1], sysdate[2])
     return Works.objects.filter(
         batch_key=utils.get_current_batch_key(current_date),
         platform_infos__platform__name=platform__name,
         platform_infos__is_deleted=False
-    ).distinct().order_by("id")
+    ).distinct().order_by("platform_infos__delivery_start")
 
 
 def calc_rate_map(qs: dict, season_delivery_count: int) -> dict:

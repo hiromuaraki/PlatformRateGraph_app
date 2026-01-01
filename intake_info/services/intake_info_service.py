@@ -87,6 +87,7 @@ def insert(items: dict, season_delivery_cnt: int, group_by_count: dict) -> bool:
     """
     各テーブルへ新規登録.
     PlatFormsのみ管理者（admin）画面より登録する運用
+    サブスクが増えることは考えずらい
 
     get_or_createの挙動
     存在する場合：既存レコード取得
@@ -97,15 +98,14 @@ def insert(items: dict, season_delivery_cnt: int, group_by_count: dict) -> bool:
         return False
     
     # バッチ年を設定
-    batch_year = items[0]["delivery_date"][:4]
     delivery_date = items[0]["delivery_date"].split("/")
-    batch_date = date(batch_year, delivery_date[1], delivery_date[2])
+    batch_date = date(delivery_date[0], delivery_date[1], delivery_date[2])
     batch_key = utils.get_current_batch_key(batch_date)
     
-    # get_or_create先に登録処理が走り制約違反エラーとなる為、createへ変更
+    # get_or_createより先に登録処理が走り制約違反エラーとなる為、createへ変更
     work_season = WorkSeason.objects.create(
         season_delivery_cnt=season_delivery_cnt,
-        year=batch_year,
+        year=batch_date.year,
         season=utils.get_season(int(batch_date.month)),
         batch_key=batch_key
     )

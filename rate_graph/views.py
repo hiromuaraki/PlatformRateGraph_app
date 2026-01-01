@@ -7,7 +7,7 @@ from django.core.paginator import Paginator
 INFOS = {}
 # Create your views here.
 def chart_view(request):
-    """円グラフへ表示させるデータを準備."""
+    """棒グラフへ表示させるデータを準備."""
     platform_map = service.get_label_map()
     year, month, day = utils.get_sysdate()
     season_delivery_count = service.get_season_delivery_count(year, month)

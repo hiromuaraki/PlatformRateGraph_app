@@ -42,12 +42,16 @@ def batch_script():
     # すべてをまとめる
     all_objs = list(platforms) + list(work_seasons) + list(staffs) + list(works) + list(platform_infos)
     
+    output_file = f"data/add_{batch_key}.json"
     with open(f"data/add_{batch_key}.json", "w") as f:
         f.write(serializers.serialize("json", all_objs, indent=2))
+    
+
+    print(f"Dump complete: {output_file}")
 
 
 def truncate():
-    """tableのデータを全て削除するスクリプト（py truncate.pyで削除実行）"""
+    """tableのデータを全て削除するスクリプト（python3 truncate.pyで削除実行）"""
     # モデルクラス → テーブル名に変換
     table_names = [WorkSeason._meta.db_table,
                    PlatformInfo._meta.db_table,
