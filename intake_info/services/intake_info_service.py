@@ -99,7 +99,7 @@ def insert(items: dict, season_delivery_cnt: int, group_by_count: dict) -> bool:
     
     # バッチ年を設定
     delivery_date = items[0]["delivery_date"].split("/")
-    batch_date = date(delivery_date[0], delivery_date[1], delivery_date[2])
+    batch_date = date(int(delivery_date[0]), int(delivery_date[1]), int(delivery_date[2]))
     batch_key = utils.get_current_batch_key(batch_date)
     
     # get_or_createより先に登録処理が走り制約違反エラーとなる為、createへ変更

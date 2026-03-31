@@ -1,0 +1,4611 @@
+[
+{
+  "model": "common.platforms",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-12-05T12:13:18.048Z",
+    "updated_at": "2025-12-05T12:13:18.048Z",
+    "batch_key": "legacy",
+    "name": "ABEMA",
+    "url": "https://abema.tv/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 2,
+  "fields": {
+    "created_at": "2025-12-05T12:14:54.430Z",
+    "updated_at": "2025-12-05T12:14:54.430Z",
+    "batch_key": "legacy",
+    "name": "dアニメストア",
+    "url": "https://animestore.docomo.ne.jp/animestore/tp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 3,
+  "fields": {
+    "created_at": "2025-12-05T12:15:51.306Z",
+    "updated_at": "2025-12-05T12:15:51.306Z",
+    "batch_key": "legacy",
+    "name": "Prime Video",
+    "url": "https://www.amazon.co.jp/gp/video/storefront"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 4,
+  "fields": {
+    "created_at": "2025-12-05T12:16:28.995Z",
+    "updated_at": "2025-12-05T12:16:28.995Z",
+    "batch_key": "legacy",
+    "name": "U-NEXT",
+    "url": "https://video.unext.jp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 5,
+  "fields": {
+    "created_at": "2025-12-05T12:17:04.856Z",
+    "updated_at": "2025-12-05T12:17:04.856Z",
+    "batch_key": "legacy",
+    "name": "Netflix",
+    "url": "https://www.netflix.com/jp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 6,
+  "fields": {
+    "created_at": "2025-12-05T12:17:38.049Z",
+    "updated_at": "2025-12-05T12:17:38.049Z",
+    "batch_key": "legacy",
+    "name": "DMM TV",
+    "url": "https://tv.dmm.com/vod/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 7,
+  "fields": {
+    "created_at": "2025-12-05T12:18:11.231Z",
+    "updated_at": "2025-12-05T12:18:11.231Z",
+    "batch_key": "legacy",
+    "name": "アニメタイムズ",
+    "url": "https://animetimes.co.jp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 8,
+  "fields": {
+    "created_at": "2025-12-05T12:18:58.187Z",
+    "updated_at": "2025-12-05T12:18:58.187Z",
+    "batch_key": "legacy",
+    "name": "dアニメストア for Prime Video",
+    "url": "https://www.amazon.co.jp/gp/video/channel/0246cb84-8f43-4c17-ac1f-2bfe85893c23"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 9,
+  "fields": {
+    "created_at": "2025-12-05T12:19:35.524Z",
+    "updated_at": "2025-12-05T12:19:35.524Z",
+    "batch_key": "legacy",
+    "name": "Lemino",
+    "url": "http://lemino.docomo.ne.jp"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 10,
+  "fields": {
+    "created_at": "2025-12-05T12:20:15.713Z",
+    "updated_at": "2025-12-05T12:20:15.713Z",
+    "batch_key": "legacy",
+    "name": "AnimeFesta",
+    "url": "https://animefesta.iowl.jp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 11,
+  "fields": {
+    "created_at": "2025-12-05T12:20:40.762Z",
+    "updated_at": "2025-12-05T12:20:40.762Z",
+    "batch_key": "legacy",
+    "name": "アニメ放題",
+    "url": "https://www.animehodai.jp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 12,
+  "fields": {
+    "created_at": "2025-12-05T12:21:07.205Z",
+    "updated_at": "2025-12-05T12:21:07.205Z",
+    "batch_key": "legacy",
+    "name": "Hulu",
+    "url": "https://www.hulu.jp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 13,
+  "fields": {
+    "created_at": "2025-12-05T12:21:37.799Z",
+    "updated_at": "2025-12-05T12:21:37.799Z",
+    "batch_key": "legacy",
+    "name": "Disney+（ディズニープラス）",
+    "url": "https://disneyplus.disney.co.jp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 14,
+  "fields": {
+    "created_at": "2025-12-05T12:22:03.622Z",
+    "updated_at": "2025-12-05T12:22:03.622Z",
+    "batch_key": "legacy",
+    "name": "FOD",
+    "url": "https://fod.fujitv.co.jp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 15,
+  "fields": {
+    "created_at": "2025-12-05T12:22:34.165Z",
+    "updated_at": "2025-12-05T12:22:34.165Z",
+    "batch_key": "legacy",
+    "name": "TVer",
+    "url": "https://tver.jp/"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 16,
+  "fields": {
+    "created_at": "2025-12-05T12:23:16.286Z",
+    "updated_at": "2025-12-05T12:23:16.286Z",
+    "batch_key": "legacy",
+    "name": "バンダイチャンネル",
+    "url": "https://www.b-ch.com/?srsltid=AfmBOoriugg30w2gzPznbECLYtNPhXM2muleBgiNCV3f7LA5SQy79z22"
+  }
+},
+{
+  "model": "common.platforms",
+  "pk": 17,
+  "fields": {
+    "created_at": "2025-12-31T15:12:45.193Z",
+    "updated_at": "2025-12-31T15:12:45.193Z",
+    "batch_key": "legacy",
+    "name": "YouTube",
+    "url": "https://www.youtube.com/"
+  }
+},
+{
+  "model": "common.workseason",
+  "pk": 3,
+  "fields": {
+    "created_at": "2026-03-31T02:35:23.705Z",
+    "updated_at": "2026-03-31T02:35:23.706Z",
+    "batch_key": "2026Q2",
+    "season_delivery_cnt": 73,
+    "year": "2026",
+    "season": "春"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 4,
+  "fields": {
+    "created_at": "2025-12-05T12:30:04.505Z",
+    "updated_at": "2025-12-05T12:30:04.505Z",
+    "batch_key": "legacy",
+    "organization_name": "ドライブ"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 6,
+  "fields": {
+    "created_at": "2025-12-05T12:30:22.087Z",
+    "updated_at": "2025-12-05T12:30:22.088Z",
+    "batch_key": "legacy",
+    "organization_name": "ゼロジー"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 7,
+  "fields": {
+    "created_at": "2025-12-05T12:30:30.639Z",
+    "updated_at": "2025-12-05T12:30:30.639Z",
+    "batch_key": "legacy",
+    "organization_name": "スタジオフラッド"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 13,
+  "fields": {
+    "created_at": "2025-12-05T12:31:28.227Z",
+    "updated_at": "2025-12-05T12:31:28.227Z",
+    "batch_key": "legacy",
+    "organization_name": "Voil"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 15,
+  "fields": {
+    "created_at": "2025-12-05T12:31:34.060Z",
+    "updated_at": "2025-12-05T12:31:34.060Z",
+    "batch_key": "legacy",
+    "organization_name": "タツノコプロ"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 16,
+  "fields": {
+    "created_at": "2025-12-05T12:31:35.181Z",
+    "updated_at": "2025-12-05T12:31:35.181Z",
+    "batch_key": "legacy",
+    "organization_name": "BN Pictures"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 19,
+  "fields": {
+    "created_at": "2025-12-05T12:31:39.094Z",
+    "updated_at": "2025-12-05T12:31:39.094Z",
+    "batch_key": "legacy",
+    "organization_name": "OLM"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 26,
+  "fields": {
+    "created_at": "2025-12-05T12:31:49.071Z",
+    "updated_at": "2025-12-05T12:31:49.071Z",
+    "batch_key": "legacy",
+    "organization_name": "MAPPA"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 30,
+  "fields": {
+    "created_at": "2025-12-05T12:31:54.752Z",
+    "updated_at": "2025-12-05T12:31:54.752Z",
+    "batch_key": "legacy",
+    "organization_name": "studio A-CAT"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 31,
+  "fields": {
+    "created_at": "2025-12-05T12:31:57.664Z",
+    "updated_at": "2025-12-05T12:31:57.664Z",
+    "batch_key": "legacy",
+    "organization_name": "ボンズフィルム"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 39,
+  "fields": {
+    "created_at": "2025-12-05T12:32:14.288Z",
+    "updated_at": "2025-12-05T12:32:14.288Z",
+    "batch_key": "legacy",
+    "organization_name": "サンライズ"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 40,
+  "fields": {
+    "created_at": "2025-12-05T12:32:15.592Z",
+    "updated_at": "2025-12-05T12:32:15.592Z",
+    "batch_key": "legacy",
+    "organization_name": "ライデンフィルム"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 41,
+  "fields": {
+    "created_at": "2025-12-05T12:32:16.438Z",
+    "updated_at": "2025-12-05T12:32:16.438Z",
+    "batch_key": "legacy",
+    "organization_name": "スタジオKAI"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 43,
+  "fields": {
+    "created_at": "2025-12-05T12:32:24.035Z",
+    "updated_at": "2025-12-05T12:32:24.035Z",
+    "batch_key": "legacy",
+    "organization_name": "WIT STUDIO"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 54,
+  "fields": {
+    "created_at": "2025-12-31T15:55:53.603Z",
+    "updated_at": "2025-12-31T15:55:53.603Z",
+    "batch_key": "2026Q1",
+    "organization_name": "Felix Film"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 57,
+  "fields": {
+    "created_at": "2025-12-31T15:56:20.453Z",
+    "updated_at": "2025-12-31T15:56:20.453Z",
+    "batch_key": "2026Q1",
+    "organization_name": "ブレインズ・ベース"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 58,
+  "fields": {
+    "created_at": "2025-12-31T15:56:21.210Z",
+    "updated_at": "2025-12-31T15:56:21.210Z",
+    "batch_key": "2026Q1",
+    "organization_name": "studio HōKIBOSHI"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 67,
+  "fields": {
+    "created_at": "2025-12-31T15:56:45.718Z",
+    "updated_at": "2025-12-31T15:56:45.718Z",
+    "batch_key": "2026Q1",
+    "organization_name": "IMAGICA Infos"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 73,
+  "fields": {
+    "created_at": "2025-12-31T15:56:55.027Z",
+    "updated_at": "2025-12-31T15:56:55.027Z",
+    "batch_key": "2026Q1",
+    "organization_name": "TROYCA"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 76,
+  "fields": {
+    "created_at": "2025-12-31T15:56:56.879Z",
+    "updated_at": "2025-12-31T15:56:56.879Z",
+    "batch_key": "2026Q1",
+    "organization_name": "葦プロダクション"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 85,
+  "fields": {
+    "created_at": "2025-12-31T15:57:07.595Z",
+    "updated_at": "2025-12-31T15:57:07.595Z",
+    "batch_key": "2026Q1",
+    "organization_name": "project No.9"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 86,
+  "fields": {
+    "created_at": "2025-12-31T15:57:10.860Z",
+    "updated_at": "2025-12-31T15:57:10.860Z",
+    "batch_key": "2026Q1",
+    "organization_name": "EMTスクエアード"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 90,
+  "fields": {
+    "created_at": "2025-12-31T15:57:21.632Z",
+    "updated_at": "2025-12-31T15:57:21.632Z",
+    "batch_key": "2026Q1",
+    "organization_name": "スタジオレオ"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 93,
+  "fields": {
+    "created_at": "2025-12-31T15:57:26.062Z",
+    "updated_at": "2025-12-31T15:57:26.062Z",
+    "batch_key": "2026Q1",
+    "organization_name": "SILVER LINK."
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 98,
+  "fields": {
+    "created_at": "2025-12-31T15:57:29.719Z",
+    "updated_at": "2025-12-31T15:57:29.719Z",
+    "batch_key": "2026Q1",
+    "organization_name": "マッドハウス"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 99,
+  "fields": {
+    "created_at": "2025-12-31T15:57:32.050Z",
+    "updated_at": "2025-12-31T15:57:32.050Z",
+    "batch_key": "2026Q1",
+    "organization_name": "ENGI"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 100,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.504Z",
+    "updated_at": "2026-03-31T02:35:27.504Z",
+    "batch_key": "2026Q2",
+    "organization_name": "シグナル・エムディ"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 101,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.552Z",
+    "updated_at": "2026-03-31T02:35:27.552Z",
+    "batch_key": "2026Q2",
+    "organization_name": "サテライト"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 102,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.622Z",
+    "updated_at": "2026-03-31T02:35:27.622Z",
+    "batch_key": "2026Q2",
+    "organization_name": "トムス・エンタテインメント／第6スタジオ"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 103,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.669Z",
+    "updated_at": "2026-03-31T02:35:27.669Z",
+    "batch_key": "2026Q2",
+    "organization_name": "ピー・アール・エー"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 104,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.696Z",
+    "updated_at": "2026-03-31T02:35:27.696Z",
+    "batch_key": "2026Q2",
+    "organization_name": "Elias"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 105,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.110Z",
+    "updated_at": "2026-03-31T02:35:28.110Z",
+    "batch_key": "2026Q2",
+    "organization_name": "Yostar Pictures"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 106,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.136Z",
+    "updated_at": "2026-03-31T02:35:28.136Z",
+    "batch_key": "2026Q2",
+    "organization_name": "JUVENAGE"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 107,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.173Z",
+    "updated_at": "2026-03-31T02:35:28.173Z",
+    "batch_key": "2026Q2",
+    "organization_name": "ソワネ"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 108,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.360Z",
+    "updated_at": "2026-03-31T02:35:28.360Z",
+    "batch_key": "2026Q2",
+    "organization_name": "OLM TEAM YOSHIOKA"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 109,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.401Z",
+    "updated_at": "2026-03-31T02:35:28.401Z",
+    "batch_key": "2026Q2",
+    "organization_name": "Qzil.la"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 110,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.425Z",
+    "updated_at": "2026-03-31T02:35:28.426Z",
+    "batch_key": "2026Q2",
+    "organization_name": "Production I.G"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 111,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.556Z",
+    "updated_at": "2026-03-31T02:35:28.556Z",
+    "batch_key": "2026Q2",
+    "organization_name": "スタジオぴえろ"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 112,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.858Z",
+    "updated_at": "2026-03-31T02:35:28.858Z",
+    "batch_key": "2026Q2",
+    "organization_name": "TORUKU from WIT STUDIO"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 113,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.907Z",
+    "updated_at": "2026-03-31T02:35:28.907Z",
+    "batch_key": "2026Q2",
+    "organization_name": "スタジオ雲雀"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 114,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.099Z",
+    "updated_at": "2026-03-31T02:35:29.099Z",
+    "batch_key": "2026Q2",
+    "organization_name": "寿門堂"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 115,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.117Z",
+    "updated_at": "2026-03-31T02:35:29.117Z",
+    "batch_key": "2026Q2",
+    "organization_name": "トムス・エンタテインメント"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 116,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.184Z",
+    "updated_at": "2026-03-31T02:35:29.184Z",
+    "batch_key": "2026Q2",
+    "organization_name": "WHITE FOX"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 117,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.202Z",
+    "updated_at": "2026-03-31T02:35:29.202Z",
+    "batch_key": "2026Q2",
+    "organization_name": "BUG FILMS"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 118,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.237Z",
+    "updated_at": "2026-03-31T02:35:29.237Z",
+    "batch_key": "2026Q2",
+    "organization_name": "エイトビット"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 119,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.418Z",
+    "updated_at": "2026-03-31T02:35:29.419Z",
+    "batch_key": "2026Q2",
+    "organization_name": "CONNECT"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 120,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.811Z",
+    "updated_at": "2026-03-31T02:35:29.811Z",
+    "batch_key": "2026Q2",
+    "organization_name": "スタジオコメット"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 121,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.908Z",
+    "updated_at": "2026-03-31T02:35:29.908Z",
+    "batch_key": "2026Q2",
+    "organization_name": "Lerche"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 122,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.948Z",
+    "updated_at": "2026-03-31T02:35:29.948Z",
+    "batch_key": "2026Q2",
+    "organization_name": "Studio五組"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 123,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.285Z",
+    "updated_at": "2026-03-31T02:35:30.285Z",
+    "batch_key": "2026Q2",
+    "organization_name": "ZEXCS"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 124,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.430Z",
+    "updated_at": "2026-03-31T02:35:30.430Z",
+    "batch_key": "2026Q2",
+    "organization_name": "BENTEN Film"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 125,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.464Z",
+    "updated_at": "2026-03-31T02:35:30.464Z",
+    "batch_key": "2026Q2",
+    "organization_name": "スタジオカフカ"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 126,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.727Z",
+    "updated_at": "2026-03-31T02:35:30.727Z",
+    "batch_key": "2026Q2",
+    "organization_name": "CUE"
+  }
+},
+{
+  "model": "common.staffs",
+  "pk": 127,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.744Z",
+    "updated_at": "2026-03-31T02:35:30.744Z",
+    "batch_key": "2026Q2",
+    "organization_name": "デイリープランネット"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 132,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.512Z",
+    "updated_at": "2026-03-31T02:35:27.512Z",
+    "batch_key": "2026Q2",
+    "staff": 100,
+    "title": "左ききのエレン",
+    "official_url": "https://eren-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 133,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.558Z",
+    "updated_at": "2026-03-31T02:35:27.558Z",
+    "batch_key": "2026Q2",
+    "staff": 101,
+    "title": "霧尾ファンクラブ",
+    "official_url": "https://kirio-fc.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 134,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.592Z",
+    "updated_at": "2026-03-31T02:35:27.592Z",
+    "batch_key": "2026Q2",
+    "staff": 15,
+    "title": "ただいま、おじゃまされます！",
+    "official_url": "https://www.tadaoja-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 135,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.626Z",
+    "updated_at": "2026-03-31T02:35:27.627Z",
+    "batch_key": "2026Q2",
+    "staff": 102,
+    "title": "オタクに優しいギャルはいない!?",
+    "official_url": "https://otagal.jp/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 136,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.674Z",
+    "updated_at": "2026-03-31T02:35:27.674Z",
+    "batch_key": "2026Q2",
+    "staff": 103,
+    "title": "一畳間まんきつ暮らし！",
+    "official_url": "https://ichijyoma-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 137,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.703Z",
+    "updated_at": "2026-03-31T02:35:27.703Z",
+    "batch_key": "2026Q2",
+    "staff": 104,
+    "title": "インゴクダンチ",
+    "official_url": "https://ingoku-danchi.deregula.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 138,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.738Z",
+    "updated_at": "2026-03-31T02:35:27.738Z",
+    "batch_key": "2026Q2",
+    "staff": 19,
+    "title": "ダイヤのA actⅡ -Second Season-",
+    "official_url": "https://diaace.com"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 139,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.766Z",
+    "updated_at": "2026-03-31T02:35:27.766Z",
+    "batch_key": "2026Q2",
+    "staff": 73,
+    "title": "逃がした魚は大きかったが釣りあげた魚が大きすぎた件",
+    "official_url": "https://nigetsuri-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 140,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.027Z",
+    "updated_at": "2026-03-31T02:35:28.027Z",
+    "batch_key": "2026Q2",
+    "staff": 101,
+    "title": "神の雫",
+    "official_url": "https://dropsofgod-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 141,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.116Z",
+    "updated_at": "2026-03-31T02:35:28.116Z",
+    "batch_key": "2026Q2",
+    "staff": 105,
+    "title": "NEEDY GIRL OVERDOSE",
+    "official_url": "https://needygirl-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 142,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.140Z",
+    "updated_at": "2026-03-31T02:35:28.140Z",
+    "batch_key": "2026Q2",
+    "staff": 106,
+    "title": "神の庭付き楠木邸",
+    "official_url": "https://kusunokitei.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 143,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.178Z",
+    "updated_at": "2026-03-31T02:35:28.178Z",
+    "batch_key": "2026Q2",
+    "staff": 107,
+    "title": "上伊那ぼたん、酔へる姿は百合の花",
+    "official_url": "https://kamiina-botan.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 144,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.202Z",
+    "updated_at": "2026-03-31T02:35:28.202Z",
+    "batch_key": "2026Q2",
+    "staff": 93,
+    "title": "夜桜さんちの大作戦 第2期",
+    "official_url": "https://mission-yozakura-family.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 145,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.242Z",
+    "updated_at": "2026-03-31T02:35:28.242Z",
+    "batch_key": "2026Q2",
+    "staff": 16,
+    "title": "杖と剣のウィストリア Season2",
+    "official_url": "https://wistoria-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 146,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.326Z",
+    "updated_at": "2026-03-31T02:35:28.326Z",
+    "batch_key": "2026Q2",
+    "staff": 19,
+    "title": "おねがいアイプリ",
+    "official_url": "https://aipri.jp/anime/special/onegai/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 147,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.366Z",
+    "updated_at": "2026-03-31T02:35:28.366Z",
+    "batch_key": "2026Q2",
+    "staff": 108,
+    "title": "悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします。Season２",
+    "official_url": "https://lastame.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 148,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.405Z",
+    "updated_at": "2026-03-31T02:35:28.405Z",
+    "batch_key": "2026Q2",
+    "staff": 109,
+    "title": "女神「異世界転生何になりたいですか」俺「勇者の肋骨で」",
+    "official_url": "https://rokkotsu-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 149,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.436Z",
+    "updated_at": "2026-03-31T02:35:28.437Z",
+    "batch_key": "2026Q2",
+    "staff": 110,
+    "title": "リラックマ ～ごゆるり夢の旅～",
+    "official_url": "https://rilakkuma-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 150,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.533Z",
+    "updated_at": "2026-03-31T02:35:28.533Z",
+    "batch_key": "2026Q2",
+    "staff": 98,
+    "title": "淡島百景",
+    "official_url": "https://awajima-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 151,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.560Z",
+    "updated_at": "2026-03-31T02:35:28.560Z",
+    "batch_key": "2026Q2",
+    "staff": 111,
+    "title": "魔法の姉妹ルルットリリィ",
+    "official_url": "https://www.luluttolilly.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 152,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.675Z",
+    "updated_at": "2026-03-31T02:35:28.675Z",
+    "batch_key": "2026Q2",
+    "staff": 16,
+    "title": "魔入りました！入間くん 第4シリーズ",
+    "official_url": "https://www.nhk-character.com/chara/iruma/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 153,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.828Z",
+    "updated_at": "2026-03-31T02:35:28.828Z",
+    "batch_key": "2026Q2",
+    "staff": 39,
+    "title": "MAO",
+    "official_url": "https://www.anime-mao.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 154,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.862Z",
+    "updated_at": "2026-03-31T02:35:28.863Z",
+    "batch_key": "2026Q2",
+    "staff": 112,
+    "title": "キャンディーカリエス",
+    "official_url": "https://www.candycaries.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 155,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.910Z",
+    "updated_at": "2026-03-31T02:35:28.910Z",
+    "batch_key": "2026Q2",
+    "staff": 113,
+    "title": "クジマ歌えば家ほろろ",
+    "official_url": "https://kujima-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 156,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.944Z",
+    "updated_at": "2026-03-31T02:35:28.944Z",
+    "batch_key": "2026Q2",
+    "staff": 31,
+    "title": "黄泉のツガイ",
+    "official_url": "https://yominotsugai.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 157,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.103Z",
+    "updated_at": "2026-03-31T02:35:29.103Z",
+    "batch_key": "2026Q2",
+    "staff": 114,
+    "title": "姫騎士は蛮族の嫁",
+    "official_url": "https://himekishi-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 158,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.121Z",
+    "updated_at": "2026-03-31T02:35:29.121Z",
+    "batch_key": "2026Q2",
+    "staff": 115,
+    "title": "彼女、お借りします 第5期",
+    "official_url": "https://kanokari-official.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 159,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.139Z",
+    "updated_at": "2026-03-31T02:35:29.139Z",
+    "batch_key": "2026Q2",
+    "staff": 57,
+    "title": "よわよわ先生",
+    "official_url": "https://www.yowayowasensei-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 160,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.187Z",
+    "updated_at": "2026-03-31T02:35:29.188Z",
+    "batch_key": "2026Q2",
+    "staff": 116,
+    "title": "Re:ゼロから始める異世界生活 4th season 喪失編",
+    "official_url": "https://re-zero-anime.jp/tv/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 161,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.206Z",
+    "updated_at": "2026-03-31T02:35:29.206Z",
+    "batch_key": "2026Q2",
+    "staff": 117,
+    "title": "とんがり帽子のアトリエ",
+    "official_url": "https://tongari-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 162,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.242Z",
+    "updated_at": "2026-03-31T02:35:29.242Z",
+    "batch_key": "2026Q2",
+    "staff": 118,
+    "title": "転生したらスライムだった件 第4期",
+    "official_url": "https://www.ten-sura.com/anime/tensura"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 163,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.337Z",
+    "updated_at": "2026-03-31T02:35:29.337Z",
+    "batch_key": "2026Q2",
+    "staff": 54,
+    "title": "愛してるゲームを終わらせたい",
+    "official_url": "https://www.aishiteru-game.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 164,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.423Z",
+    "updated_at": "2026-03-31T02:35:29.423Z",
+    "batch_key": "2026Q2",
+    "staff": 119,
+    "title": "クラスで2番目に可愛い女の子と友だちになった",
+    "official_url": "https://kuranika.asmik-ace.co.jp/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 165,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.483Z",
+    "updated_at": "2026-03-31T02:35:29.483Z",
+    "batch_key": "2026Q2",
+    "staff": 13,
+    "title": "レプリカだって、恋をする。",
+    "official_url": "https://replico.jp/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 166,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.511Z",
+    "updated_at": "2026-03-31T02:35:29.511Z",
+    "batch_key": "2026Q2",
+    "staff": 98,
+    "title": "LIAR GAME -ライアーゲーム-",
+    "official_url": "https://www.liargame-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 167,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.537Z",
+    "updated_at": "2026-03-31T02:35:29.537Z",
+    "batch_key": "2026Q2",
+    "staff": 99,
+    "title": "ゴーストコンサート : missing Songs",
+    "official_url": "https://ghostconcert-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 168,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.616Z",
+    "updated_at": "2026-03-31T02:35:29.616Z",
+    "batch_key": "2026Q2",
+    "staff": 6,
+    "title": "ポンコツ風紀委員とスカート丈が不適切なJKの話",
+    "official_url": "https://ponsuka.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 169,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.662Z",
+    "updated_at": "2026-03-31T02:35:29.662Z",
+    "batch_key": "2026Q2",
+    "staff": 41,
+    "title": "カナン様はあくまでチョロい",
+    "official_url": "https://kanachoro-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 170,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.724Z",
+    "updated_at": "2026-03-31T02:35:29.725Z",
+    "batch_key": "2026Q2",
+    "staff": 7,
+    "title": "最強の職業は勇者でも賢者でもなく鑑定士（仮）らしいですよ？",
+    "official_url": "https://kanteishikari-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 171,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.763Z",
+    "updated_at": "2026-03-31T02:35:29.763Z",
+    "batch_key": "2026Q2",
+    "staff": 40,
+    "title": "また殺されてしまったのですね、探偵様",
+    "official_url": "https://www.tbs.co.jp/anime/matakoro/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 172,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.815Z",
+    "updated_at": "2026-03-31T02:35:29.815Z",
+    "batch_key": "2026Q2",
+    "staff": 120,
+    "title": "灰原くんの強くて青春ニューゲーム",
+    "official_url": "https://haibarakun-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 173,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.863Z",
+    "updated_at": "2026-03-31T02:35:29.863Z",
+    "batch_key": "2026Q2",
+    "staff": 67,
+    "title": "魔物喰らいの冒険者～俺だけ魔物を喰らって強くなる～",
+    "official_url": "https://animationid.com/mamonogurai/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 174,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.913Z",
+    "updated_at": "2026-03-31T02:35:29.913Z",
+    "batch_key": "2026Q2",
+    "staff": 121,
+    "title": "ようこそ実力至上主義の教室へ 4th Season 2年生編1学期",
+    "official_url": "https://you-zitsu.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 175,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.952Z",
+    "updated_at": "2026-03-31T02:35:29.952Z",
+    "batch_key": "2026Q2",
+    "staff": 122,
+    "title": "自動販売機に生まれ変わった俺は迷宮を彷徨う 3rd season",
+    "official_url": "https://jihanki-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 176,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.002Z",
+    "updated_at": "2026-03-31T02:35:30.002Z",
+    "batch_key": "2026Q2",
+    "staff": 43,
+    "title": "春夏秋冬代行者 春の舞",
+    "official_url": "https://4seasons-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 177,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.178Z",
+    "updated_at": "2026-03-31T02:35:30.178Z",
+    "batch_key": "2026Q2",
+    "staff": 41,
+    "title": "スノウボールアース",
+    "official_url": "https://snowballearth.net/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 178,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.292Z",
+    "updated_at": "2026-03-31T02:35:30.293Z",
+    "batch_key": "2026Q2",
+    "staff": 123,
+    "title": "あかね噺",
+    "official_url": "https://akane-banashi.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 179,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.327Z",
+    "updated_at": "2026-03-31T02:35:30.327Z",
+    "batch_key": "2026Q2",
+    "staff": 41,
+    "title": "氷の城壁",
+    "official_url": "https://korinojoheki-pr.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 180,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.349Z",
+    "updated_at": "2026-03-31T02:35:30.350Z",
+    "batch_key": "2026Q2",
+    "staff": 115,
+    "title": "北斗の拳 -FIST OF THE NORTH STAR-",
+    "official_url": "https://hokuto-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 181,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.366Z",
+    "updated_at": "2026-03-31T02:35:30.366Z",
+    "batch_key": "2026Q2",
+    "staff": 86,
+    "title": "メイドさんは食べるだけ",
+    "official_url": "https://meitabe-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 182,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.434Z",
+    "updated_at": "2026-03-31T02:35:30.434Z",
+    "batch_key": "2026Q2",
+    "staff": 124,
+    "title": "リィンカーネーションの花弁",
+    "official_url": "https://petals-of-reincarnation-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 183,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.468Z",
+    "updated_at": "2026-03-31T02:35:30.468Z",
+    "batch_key": "2026Q2",
+    "staff": 125,
+    "title": "日本三國",
+    "official_url": "https://www.nipponsangoku.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 184,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.488Z",
+    "updated_at": "2026-03-31T02:35:30.488Z",
+    "batch_key": "2026Q2",
+    "staff": 4,
+    "title": "ガンバレ！中村くん！！",
+    "official_url": "https://nakamura-kun.love/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 185,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.602Z",
+    "updated_at": "2026-03-31T02:35:30.602Z",
+    "batch_key": "2026Q2",
+    "staff": 58,
+    "title": "大きい女の子は好きですか？",
+    "official_url": "https://ookii-onnanoko.af-original.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 186,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.622Z",
+    "updated_at": "2026-03-31T02:35:30.622Z",
+    "batch_key": "2026Q2",
+    "staff": 115,
+    "title": "Dr.STONE SCIENCE FUTURE 第3クール",
+    "official_url": "https://dr-stone.jp/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 187,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.698Z",
+    "updated_at": "2026-03-31T02:35:30.698Z",
+    "batch_key": "2026Q2",
+    "staff": 85,
+    "title": "お隣の天使様にいつの間にか駄目人間にされていた件2",
+    "official_url": "https://otonarino-tenshisama.jp"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 188,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.731Z",
+    "updated_at": "2026-03-31T02:35:30.731Z",
+    "batch_key": "2026Q2",
+    "staff": 126,
+    "title": "キルアオ",
+    "official_url": "https://kill-blue.jp/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 189,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.749Z",
+    "updated_at": "2026-03-31T02:35:30.749Z",
+    "batch_key": "2026Q2",
+    "staff": 127,
+    "title": "こめかみっ！ Girl’s",
+    "official_url": "https://komekamigirls.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 190,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.836Z",
+    "updated_at": "2026-03-31T02:35:30.836Z",
+    "batch_key": "2026Q2",
+    "staff": 26,
+    "title": "ドロヘドロ Season2",
+    "official_url": "https://dorohedoro.net/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 191,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.134Z",
+    "updated_at": "2026-03-31T02:35:31.134Z",
+    "batch_key": "2026Q2",
+    "staff": 31,
+    "title": "マリッジトキシン",
+    "official_url": "https://www.marriagetoxin-anime.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 192,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.161Z",
+    "updated_at": "2026-03-31T02:35:31.161Z",
+    "batch_key": "2026Q2",
+    "staff": 6,
+    "title": "異世界のんびり農家2",
+    "official_url": "https://nonbiri-nouka2.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 194,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.196Z",
+    "updated_at": "2026-03-31T02:35:31.196Z",
+    "batch_key": "2026Q2",
+    "staff": 30,
+    "title": "最強の王様、二度目の人生は何をする？ SEASON2",
+    "official_url": "https://saikyo2dome-tbate.com/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 195,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.258Z",
+    "updated_at": "2026-03-31T02:35:31.258Z",
+    "batch_key": "2026Q2",
+    "staff": 76,
+    "title": "自称悪役令嬢な婚約者の観察記録。",
+    "official_url": "https://jisho-akuyaku-anime.jp/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 196,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.278Z",
+    "updated_at": "2026-03-31T02:35:31.278Z",
+    "batch_key": "2026Q2",
+    "staff": 43,
+    "title": "本好きの下剋上 司書になるためには手段を選んでいられません 領主の養女",
+    "official_url": "http://booklove-anime.jp/"
+  }
+},
+{
+  "model": "common.works",
+  "pk": 197,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.317Z",
+    "updated_at": "2026-03-31T02:35:31.318Z",
+    "batch_key": "2026Q2",
+    "staff": 90,
+    "title": "茉莉花ちゃんの好感度はぶっ壊れている",
+    "official_url": "https://marikowa.af-original.com/"
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 320,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.542Z",
+    "updated_at": "2026-03-31T02:35:27.542Z",
+    "batch_key": "2026Q2",
+    "platform": 3,
+    "work": 132,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 18,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 321,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.578Z",
+    "updated_at": "2026-03-31T02:35:27.578Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 133,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 322,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.616Z",
+    "updated_at": "2026-03-31T02:35:27.616Z",
+    "batch_key": "2026Q2",
+    "platform": 12,
+    "work": 134,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 13,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 323,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.638Z",
+    "updated_at": "2026-03-31T02:35:27.638Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 135,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 324,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.665Z",
+    "updated_at": "2026-03-31T02:35:27.665Z",
+    "batch_key": "2026Q2",
+    "platform": 7,
+    "work": 135,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 325,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.687Z",
+    "updated_at": "2026-03-31T02:35:27.687Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 136,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 326,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.717Z",
+    "updated_at": "2026-03-31T02:35:27.717Z",
+    "batch_key": "2026Q2",
+    "platform": 10,
+    "work": 137,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 6,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 327,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.733Z",
+    "updated_at": "2026-03-31T02:35:27.733Z",
+    "batch_key": "2026Q2",
+    "platform": 6,
+    "work": 137,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 14,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 328,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.753Z",
+    "updated_at": "2026-03-31T02:35:27.753Z",
+    "batch_key": "2026Q2",
+    "platform": 5,
+    "work": 138,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 329,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.811Z",
+    "updated_at": "2026-03-31T02:35:27.811Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 139,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 330,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.823Z",
+    "updated_at": "2026-03-31T02:35:27.823Z",
+    "batch_key": "2026Q2",
+    "platform": 10,
+    "work": 139,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 6,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 331,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.909Z",
+    "updated_at": "2026-03-31T02:35:27.910Z",
+    "batch_key": "2026Q2",
+    "platform": 6,
+    "work": 139,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 14,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 332,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.923Z",
+    "updated_at": "2026-03-31T02:35:27.923Z",
+    "batch_key": "2026Q2",
+    "platform": 14,
+    "work": 139,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 6,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 333,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.937Z",
+    "updated_at": "2026-03-31T02:35:27.937Z",
+    "batch_key": "2026Q2",
+    "platform": 12,
+    "work": 139,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 13,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 334,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.947Z",
+    "updated_at": "2026-03-31T02:35:27.947Z",
+    "batch_key": "2026Q2",
+    "platform": 9,
+    "work": 139,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 335,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.959Z",
+    "updated_at": "2026-03-31T02:35:27.959Z",
+    "batch_key": "2026Q2",
+    "platform": 3,
+    "work": 139,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 18,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 336,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.969Z",
+    "updated_at": "2026-03-31T02:35:27.969Z",
+    "batch_key": "2026Q2",
+    "platform": 4,
+    "work": 139,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 19,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 337,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.981Z",
+    "updated_at": "2026-03-31T02:35:27.981Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 139,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 338,
+  "fields": {
+    "created_at": "2026-03-31T02:35:27.999Z",
+    "updated_at": "2026-03-31T02:35:27.999Z",
+    "batch_key": "2026Q2",
+    "platform": 11,
+    "work": 139,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 17,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 339,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.016Z",
+    "updated_at": "2026-03-31T02:35:28.016Z",
+    "batch_key": "2026Q2",
+    "platform": 16,
+    "work": 139,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 6,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 340,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.048Z",
+    "updated_at": "2026-03-31T02:35:28.048Z",
+    "batch_key": "2026Q2",
+    "platform": 12,
+    "work": 140,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 13,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 341,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.062Z",
+    "updated_at": "2026-03-31T02:35:28.062Z",
+    "batch_key": "2026Q2",
+    "platform": 9,
+    "work": 140,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 342,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.080Z",
+    "updated_at": "2026-03-31T02:35:28.080Z",
+    "batch_key": "2026Q2",
+    "platform": 7,
+    "work": 140,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 343,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.130Z",
+    "updated_at": "2026-03-31T02:35:28.130Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 141,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 344,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.153Z",
+    "updated_at": "2026-03-31T02:35:28.154Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 142,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 345,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.170Z",
+    "updated_at": "2026-03-31T02:35:28.170Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 142,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 346,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.193Z",
+    "updated_at": "2026-03-31T02:35:28.193Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 143,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 347,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.212Z",
+    "updated_at": "2026-03-31T02:35:28.212Z",
+    "batch_key": "2026Q2",
+    "platform": 4,
+    "work": 144,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 19,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 348,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.221Z",
+    "updated_at": "2026-03-31T02:35:28.221Z",
+    "batch_key": "2026Q2",
+    "platform": 7,
+    "work": 144,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 349,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.236Z",
+    "updated_at": "2026-03-31T02:35:28.236Z",
+    "batch_key": "2026Q2",
+    "platform": 11,
+    "work": 144,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 17,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 350,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.258Z",
+    "updated_at": "2026-03-31T02:35:28.258Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 145,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 351,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.276Z",
+    "updated_at": "2026-03-31T02:35:28.276Z",
+    "batch_key": "2026Q2",
+    "platform": 3,
+    "work": 145,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 18,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 352,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.291Z",
+    "updated_at": "2026-03-31T02:35:28.291Z",
+    "batch_key": "2026Q2",
+    "platform": 4,
+    "work": 145,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 19,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 353,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.304Z",
+    "updated_at": "2026-03-31T02:35:28.304Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 145,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 354,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.321Z",
+    "updated_at": "2026-03-31T02:35:28.321Z",
+    "batch_key": "2026Q2",
+    "platform": 11,
+    "work": 145,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 17,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 355,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.340Z",
+    "updated_at": "2026-03-31T02:35:28.340Z",
+    "batch_key": "2026Q2",
+    "platform": 9,
+    "work": 146,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 356,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.357Z",
+    "updated_at": "2026-03-31T02:35:28.357Z",
+    "batch_key": "2026Q2",
+    "platform": 7,
+    "work": 146,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 357,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.378Z",
+    "updated_at": "2026-03-31T02:35:28.378Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 147,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 358,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.396Z",
+    "updated_at": "2026-03-31T02:35:28.396Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 147,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 359,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.414Z",
+    "updated_at": "2026-03-31T02:35:28.414Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 148,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 360,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.423Z",
+    "updated_at": "2026-03-31T02:35:28.423Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 148,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 361,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.447Z",
+    "updated_at": "2026-03-31T02:35:28.447Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 149,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 362,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.462Z",
+    "updated_at": "2026-03-31T02:35:28.462Z",
+    "batch_key": "2026Q2",
+    "platform": 6,
+    "work": 149,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 14,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 363,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.476Z",
+    "updated_at": "2026-03-31T02:35:28.476Z",
+    "batch_key": "2026Q2",
+    "platform": 3,
+    "work": 149,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 18,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 364,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.493Z",
+    "updated_at": "2026-03-31T02:35:28.493Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 149,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 365,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.507Z",
+    "updated_at": "2026-03-31T02:35:28.507Z",
+    "batch_key": "2026Q2",
+    "platform": 8,
+    "work": 149,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 5,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 366,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.523Z",
+    "updated_at": "2026-03-31T02:35:28.523Z",
+    "batch_key": "2026Q2",
+    "platform": 16,
+    "work": 149,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 6,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 367,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.551Z",
+    "updated_at": "2026-03-31T02:35:28.551Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 150,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 368,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.574Z",
+    "updated_at": "2026-03-31T02:35:28.574Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 151,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 369,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.592Z",
+    "updated_at": "2026-03-31T02:35:28.592Z",
+    "batch_key": "2026Q2",
+    "platform": 14,
+    "work": 151,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 6,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 370,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.610Z",
+    "updated_at": "2026-03-31T02:35:28.610Z",
+    "batch_key": "2026Q2",
+    "platform": 3,
+    "work": 151,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 18,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 371,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.627Z",
+    "updated_at": "2026-03-31T02:35:28.627Z",
+    "batch_key": "2026Q2",
+    "platform": 4,
+    "work": 151,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 19,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 372,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.640Z",
+    "updated_at": "2026-03-31T02:35:28.640Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 151,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 373,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.654Z",
+    "updated_at": "2026-03-31T02:35:28.654Z",
+    "batch_key": "2026Q2",
+    "platform": 11,
+    "work": 151,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 17,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 374,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.669Z",
+    "updated_at": "2026-03-31T02:35:28.669Z",
+    "batch_key": "2026Q2",
+    "platform": 16,
+    "work": 151,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 6,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 375,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.691Z",
+    "updated_at": "2026-03-31T02:35:28.692Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 152,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 376,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.705Z",
+    "updated_at": "2026-03-31T02:35:28.705Z",
+    "batch_key": "2026Q2",
+    "platform": 6,
+    "work": 152,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 14,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 377,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.721Z",
+    "updated_at": "2026-03-31T02:35:28.721Z",
+    "batch_key": "2026Q2",
+    "platform": 14,
+    "work": 152,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 6,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 378,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.735Z",
+    "updated_at": "2026-03-31T02:35:28.735Z",
+    "batch_key": "2026Q2",
+    "platform": 12,
+    "work": 152,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 13,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 379,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.746Z",
+    "updated_at": "2026-03-31T02:35:28.746Z",
+    "batch_key": "2026Q2",
+    "platform": 9,
+    "work": 152,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 380,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.761Z",
+    "updated_at": "2026-03-31T02:35:28.761Z",
+    "batch_key": "2026Q2",
+    "platform": 3,
+    "work": 152,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 18,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 381,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.776Z",
+    "updated_at": "2026-03-31T02:35:28.776Z",
+    "batch_key": "2026Q2",
+    "platform": 4,
+    "work": 152,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 19,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 382,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.791Z",
+    "updated_at": "2026-03-31T02:35:28.791Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 152,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 383,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.808Z",
+    "updated_at": "2026-03-31T02:35:28.808Z",
+    "batch_key": "2026Q2",
+    "platform": 8,
+    "work": 152,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 5,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 384,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.821Z",
+    "updated_at": "2026-03-31T02:35:28.821Z",
+    "batch_key": "2026Q2",
+    "platform": 11,
+    "work": 152,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 17,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 385,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.840Z",
+    "updated_at": "2026-03-31T02:35:28.841Z",
+    "batch_key": "2026Q2",
+    "platform": 12,
+    "work": 153,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 13,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 386,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.855Z",
+    "updated_at": "2026-03-31T02:35:28.855Z",
+    "batch_key": "2026Q2",
+    "platform": 4,
+    "work": 153,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 19,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 387,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.876Z",
+    "updated_at": "2026-03-31T02:35:28.876Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 154,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 388,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.890Z",
+    "updated_at": "2026-03-31T02:35:28.890Z",
+    "batch_key": "2026Q2",
+    "platform": 6,
+    "work": 154,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 14,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 389,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.904Z",
+    "updated_at": "2026-03-31T02:35:28.904Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 154,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 390,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.922Z",
+    "updated_at": "2026-03-31T02:35:28.922Z",
+    "batch_key": "2026Q2",
+    "platform": 4,
+    "work": 155,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 19,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 391,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.938Z",
+    "updated_at": "2026-03-31T02:35:28.938Z",
+    "batch_key": "2026Q2",
+    "platform": 11,
+    "work": 155,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 17,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 392,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.957Z",
+    "updated_at": "2026-03-31T02:35:28.957Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 156,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 393,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.971Z",
+    "updated_at": "2026-03-31T02:35:28.971Z",
+    "batch_key": "2026Q2",
+    "platform": 10,
+    "work": 156,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 6,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 394,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.986Z",
+    "updated_at": "2026-03-31T02:35:28.986Z",
+    "batch_key": "2026Q2",
+    "platform": 6,
+    "work": 156,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 14,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 395,
+  "fields": {
+    "created_at": "2026-03-31T02:35:28.995Z",
+    "updated_at": "2026-03-31T02:35:28.995Z",
+    "batch_key": "2026Q2",
+    "platform": 14,
+    "work": 156,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 6,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 396,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.011Z",
+    "updated_at": "2026-03-31T02:35:29.011Z",
+    "batch_key": "2026Q2",
+    "platform": 12,
+    "work": 156,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 13,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 397,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.025Z",
+    "updated_at": "2026-03-31T02:35:29.025Z",
+    "batch_key": "2026Q2",
+    "platform": 9,
+    "work": 156,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 398,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.041Z",
+    "updated_at": "2026-03-31T02:35:29.041Z",
+    "batch_key": "2026Q2",
+    "platform": 5,
+    "work": 156,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 399,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.055Z",
+    "updated_at": "2026-03-31T02:35:29.055Z",
+    "batch_key": "2026Q2",
+    "platform": 3,
+    "work": 156,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 18,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 400,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.071Z",
+    "updated_at": "2026-03-31T02:35:29.071Z",
+    "batch_key": "2026Q2",
+    "platform": 4,
+    "work": 156,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 19,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 401,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.082Z",
+    "updated_at": "2026-03-31T02:35:29.082Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 156,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 402,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.093Z",
+    "updated_at": "2026-03-31T02:35:29.093Z",
+    "batch_key": "2026Q2",
+    "platform": 11,
+    "work": 156,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 17,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 403,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.114Z",
+    "updated_at": "2026-03-31T02:35:29.114Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 157,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 404,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.133Z",
+    "updated_at": "2026-03-31T02:35:29.134Z",
+    "batch_key": "2026Q2",
+    "platform": 6,
+    "work": 158,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 14,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 405,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.153Z",
+    "updated_at": "2026-03-31T02:35:29.153Z",
+    "batch_key": "2026Q2",
+    "platform": 10,
+    "work": 159,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 6,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 406,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.163Z",
+    "updated_at": "2026-03-31T02:35:29.163Z",
+    "batch_key": "2026Q2",
+    "platform": 6,
+    "work": 159,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 14,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 407,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.179Z",
+    "updated_at": "2026-03-31T02:35:29.179Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 159,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 408,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.198Z",
+    "updated_at": "2026-03-31T02:35:29.198Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 160,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 409,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.220Z",
+    "updated_at": "2026-03-31T02:35:29.220Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 161,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 410,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.234Z",
+    "updated_at": "2026-03-31T02:35:29.234Z",
+    "batch_key": "2026Q2",
+    "platform": 5,
+    "work": 161,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 411,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.255Z",
+    "updated_at": "2026-03-31T02:35:29.255Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 162,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 412,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.267Z",
+    "updated_at": "2026-03-31T02:35:29.267Z",
+    "batch_key": "2026Q2",
+    "platform": 6,
+    "work": 162,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 14,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 413,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.278Z",
+    "updated_at": "2026-03-31T02:35:29.278Z",
+    "batch_key": "2026Q2",
+    "platform": 12,
+    "work": 162,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 13,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 414,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.290Z",
+    "updated_at": "2026-03-31T02:35:29.290Z",
+    "batch_key": "2026Q2",
+    "platform": 5,
+    "work": 162,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 415,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.306Z",
+    "updated_at": "2026-03-31T02:35:29.306Z",
+    "batch_key": "2026Q2",
+    "platform": 3,
+    "work": 162,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 18,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 416,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.319Z",
+    "updated_at": "2026-03-31T02:35:29.319Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 162,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 417,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.330Z",
+    "updated_at": "2026-03-31T02:35:29.331Z",
+    "batch_key": "2026Q2",
+    "platform": 11,
+    "work": 162,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 17,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 418,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.346Z",
+    "updated_at": "2026-03-31T02:35:29.346Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 163,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 419,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.416Z",
+    "updated_at": "2026-03-31T02:35:29.416Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 163,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 420,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.442Z",
+    "updated_at": "2026-03-31T02:35:29.442Z",
+    "batch_key": "2026Q2",
+    "platform": 4,
+    "work": 164,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 19,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 421,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.453Z",
+    "updated_at": "2026-03-31T02:35:29.453Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 164,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 422,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.478Z",
+    "updated_at": "2026-03-31T02:35:29.478Z",
+    "batch_key": "2026Q2",
+    "platform": 11,
+    "work": 164,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 17,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 423,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.497Z",
+    "updated_at": "2026-03-31T02:35:29.497Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 165,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 424,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.528Z",
+    "updated_at": "2026-03-31T02:35:29.528Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 166,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 425,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.549Z",
+    "updated_at": "2026-03-31T02:35:29.549Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 167,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 426,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.559Z",
+    "updated_at": "2026-03-31T02:35:29.560Z",
+    "batch_key": "2026Q2",
+    "platform": 12,
+    "work": 167,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 13,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 427,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.570Z",
+    "updated_at": "2026-03-31T02:35:29.570Z",
+    "batch_key": "2026Q2",
+    "platform": 9,
+    "work": 167,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 428,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.584Z",
+    "updated_at": "2026-03-31T02:35:29.584Z",
+    "batch_key": "2026Q2",
+    "platform": 4,
+    "work": 167,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 19,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 429,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.596Z",
+    "updated_at": "2026-03-31T02:35:29.596Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 167,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 430,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.608Z",
+    "updated_at": "2026-03-31T02:35:29.608Z",
+    "batch_key": "2026Q2",
+    "platform": 11,
+    "work": 167,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 17,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 431,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.631Z",
+    "updated_at": "2026-03-31T02:35:29.632Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 168,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 432,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.651Z",
+    "updated_at": "2026-03-31T02:35:29.652Z",
+    "batch_key": "2026Q2",
+    "platform": 8,
+    "work": 168,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 5,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 433,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.681Z",
+    "updated_at": "2026-03-31T02:35:29.681Z",
+    "batch_key": "2026Q2",
+    "platform": 4,
+    "work": 169,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 19,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 434,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.698Z",
+    "updated_at": "2026-03-31T02:35:29.698Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 169,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 435,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.716Z",
+    "updated_at": "2026-03-31T02:35:29.716Z",
+    "batch_key": "2026Q2",
+    "platform": 11,
+    "work": 169,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 17,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 436,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.740Z",
+    "updated_at": "2026-03-31T02:35:29.741Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 170,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 437,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.754Z",
+    "updated_at": "2026-03-31T02:35:29.755Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 170,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 438,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.773Z",
+    "updated_at": "2026-03-31T02:35:29.773Z",
+    "batch_key": "2026Q2",
+    "platform": 4,
+    "work": 171,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 19,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 439,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.790Z",
+    "updated_at": "2026-03-31T02:35:29.790Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 171,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 440,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.808Z",
+    "updated_at": "2026-03-31T02:35:29.808Z",
+    "batch_key": "2026Q2",
+    "platform": 11,
+    "work": 171,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 17,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 441,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.826Z",
+    "updated_at": "2026-03-31T02:35:29.826Z",
+    "batch_key": "2026Q2",
+    "platform": 4,
+    "work": 172,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 19,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 442,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.836Z",
+    "updated_at": "2026-03-31T02:35:29.836Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 172,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 443,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.854Z",
+    "updated_at": "2026-03-31T02:35:29.855Z",
+    "batch_key": "2026Q2",
+    "platform": 11,
+    "work": 172,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 17,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 444,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.873Z",
+    "updated_at": "2026-03-31T02:35:29.873Z",
+    "batch_key": "2026Q2",
+    "platform": 6,
+    "work": 173,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 14,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 445,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.887Z",
+    "updated_at": "2026-03-31T02:35:29.887Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 173,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 446,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.903Z",
+    "updated_at": "2026-03-31T02:35:29.903Z",
+    "batch_key": "2026Q2",
+    "platform": 7,
+    "work": 173,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 447,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.929Z",
+    "updated_at": "2026-03-31T02:35:29.929Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 174,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 448,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.943Z",
+    "updated_at": "2026-03-31T02:35:29.943Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 174,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 449,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.965Z",
+    "updated_at": "2026-03-31T02:35:29.965Z",
+    "batch_key": "2026Q2",
+    "platform": 4,
+    "work": 175,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 19,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 450,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.979Z",
+    "updated_at": "2026-03-31T02:35:29.979Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 175,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 451,
+  "fields": {
+    "created_at": "2026-03-31T02:35:29.996Z",
+    "updated_at": "2026-03-31T02:35:29.996Z",
+    "batch_key": "2026Q2",
+    "platform": 11,
+    "work": 175,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 17,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 452,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.011Z",
+    "updated_at": "2026-03-31T02:35:30.011Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 176,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 453,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.029Z",
+    "updated_at": "2026-03-31T02:35:30.029Z",
+    "batch_key": "2026Q2",
+    "platform": 13,
+    "work": 176,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 2,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 454,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.046Z",
+    "updated_at": "2026-03-31T02:35:30.046Z",
+    "batch_key": "2026Q2",
+    "platform": 14,
+    "work": 176,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 6,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 455,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.061Z",
+    "updated_at": "2026-03-31T02:35:30.062Z",
+    "batch_key": "2026Q2",
+    "platform": 12,
+    "work": 176,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 13,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 456,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.075Z",
+    "updated_at": "2026-03-31T02:35:30.076Z",
+    "batch_key": "2026Q2",
+    "platform": 5,
+    "work": 176,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 457,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.085Z",
+    "updated_at": "2026-03-31T02:35:30.085Z",
+    "batch_key": "2026Q2",
+    "platform": 3,
+    "work": 176,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 18,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 458,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.102Z",
+    "updated_at": "2026-03-31T02:35:30.103Z",
+    "batch_key": "2026Q2",
+    "platform": 4,
+    "work": 176,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 19,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 459,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.115Z",
+    "updated_at": "2026-03-31T02:35:30.115Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 176,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 460,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.129Z",
+    "updated_at": "2026-03-31T02:35:30.129Z",
+    "batch_key": "2026Q2",
+    "platform": 8,
+    "work": 176,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 5,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 461,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.141Z",
+    "updated_at": "2026-03-31T02:35:30.141Z",
+    "batch_key": "2026Q2",
+    "platform": 7,
+    "work": 176,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 462,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.158Z",
+    "updated_at": "2026-03-31T02:35:30.158Z",
+    "batch_key": "2026Q2",
+    "platform": 11,
+    "work": 176,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 17,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 463,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.170Z",
+    "updated_at": "2026-03-31T02:35:30.170Z",
+    "batch_key": "2026Q2",
+    "platform": 16,
+    "work": 176,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 6,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 464,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.193Z",
+    "updated_at": "2026-03-31T02:35:30.193Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 177,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 465,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.204Z",
+    "updated_at": "2026-03-31T02:35:30.204Z",
+    "batch_key": "2026Q2",
+    "platform": 6,
+    "work": 177,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 14,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 466,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.217Z",
+    "updated_at": "2026-03-31T02:35:30.217Z",
+    "batch_key": "2026Q2",
+    "platform": 12,
+    "work": 177,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 13,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 467,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.229Z",
+    "updated_at": "2026-03-31T02:35:30.229Z",
+    "batch_key": "2026Q2",
+    "platform": 5,
+    "work": 177,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 468,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.247Z",
+    "updated_at": "2026-03-31T02:35:30.247Z",
+    "batch_key": "2026Q2",
+    "platform": 3,
+    "work": 177,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 18,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 469,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.257Z",
+    "updated_at": "2026-03-31T02:35:30.257Z",
+    "batch_key": "2026Q2",
+    "platform": 4,
+    "work": 177,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 19,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 470,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.268Z",
+    "updated_at": "2026-03-31T02:35:30.268Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 177,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 471,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.282Z",
+    "updated_at": "2026-03-31T02:35:30.282Z",
+    "batch_key": "2026Q2",
+    "platform": 7,
+    "work": 177,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 472,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.304Z",
+    "updated_at": "2026-03-31T02:35:30.304Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 178,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 473,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.318Z",
+    "updated_at": "2026-03-31T02:35:30.318Z",
+    "batch_key": "2026Q2",
+    "platform": 5,
+    "work": 178,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 474,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.339Z",
+    "updated_at": "2026-03-31T02:35:30.339Z",
+    "batch_key": "2026Q2",
+    "platform": 5,
+    "work": 179,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 475,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.359Z",
+    "updated_at": "2026-03-31T02:35:30.359Z",
+    "batch_key": "2026Q2",
+    "platform": 3,
+    "work": 180,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 18,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 476,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.378Z",
+    "updated_at": "2026-03-31T02:35:30.378Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 181,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 477,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.395Z",
+    "updated_at": "2026-03-31T02:35:30.395Z",
+    "batch_key": "2026Q2",
+    "platform": 4,
+    "work": 181,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 19,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 478,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.410Z",
+    "updated_at": "2026-03-31T02:35:30.410Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 181,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 479,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.427Z",
+    "updated_at": "2026-03-31T02:35:30.427Z",
+    "batch_key": "2026Q2",
+    "platform": 11,
+    "work": 181,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 17,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 480,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.446Z",
+    "updated_at": "2026-03-31T02:35:30.446Z",
+    "batch_key": "2026Q2",
+    "platform": 3,
+    "work": 182,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 18,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 481,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.460Z",
+    "updated_at": "2026-03-31T02:35:30.461Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 182,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 482,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.481Z",
+    "updated_at": "2026-03-31T02:35:30.482Z",
+    "batch_key": "2026Q2",
+    "platform": 3,
+    "work": 183,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 18,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 483,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.502Z",
+    "updated_at": "2026-03-31T02:35:30.502Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 184,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 484,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.515Z",
+    "updated_at": "2026-03-31T02:35:30.515Z",
+    "batch_key": "2026Q2",
+    "platform": 10,
+    "work": 184,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 6,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 485,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.528Z",
+    "updated_at": "2026-03-31T02:35:30.528Z",
+    "batch_key": "2026Q2",
+    "platform": 6,
+    "work": 184,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 14,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 486,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.543Z",
+    "updated_at": "2026-03-31T02:35:30.543Z",
+    "batch_key": "2026Q2",
+    "platform": 12,
+    "work": 184,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 13,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 487,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.555Z",
+    "updated_at": "2026-03-31T02:35:30.556Z",
+    "batch_key": "2026Q2",
+    "platform": 9,
+    "work": 184,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 488,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.567Z",
+    "updated_at": "2026-03-31T02:35:30.567Z",
+    "batch_key": "2026Q2",
+    "platform": 3,
+    "work": 184,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 18,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 489,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.583Z",
+    "updated_at": "2026-03-31T02:35:30.583Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 184,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 490,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.593Z",
+    "updated_at": "2026-03-31T02:35:30.594Z",
+    "batch_key": "2026Q2",
+    "platform": 16,
+    "work": 184,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 6,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 491,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.613Z",
+    "updated_at": "2026-03-31T02:35:30.614Z",
+    "batch_key": "2026Q2",
+    "platform": 10,
+    "work": 185,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 6,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 492,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.635Z",
+    "updated_at": "2026-03-31T02:35:30.635Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 186,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 493,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.650Z",
+    "updated_at": "2026-03-31T02:35:30.650Z",
+    "batch_key": "2026Q2",
+    "platform": 12,
+    "work": 186,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 13,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 494,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.662Z",
+    "updated_at": "2026-03-31T02:35:30.662Z",
+    "batch_key": "2026Q2",
+    "platform": 9,
+    "work": 186,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 495,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.677Z",
+    "updated_at": "2026-03-31T02:35:30.677Z",
+    "batch_key": "2026Q2",
+    "platform": 3,
+    "work": 186,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 18,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 496,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.690Z",
+    "updated_at": "2026-03-31T02:35:30.690Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 186,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 497,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.709Z",
+    "updated_at": "2026-03-31T02:35:30.709Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 187,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 498,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.720Z",
+    "updated_at": "2026-03-31T02:35:30.720Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 187,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 499,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.741Z",
+    "updated_at": "2026-03-31T02:35:30.741Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 188,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 500,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.760Z",
+    "updated_at": "2026-03-31T02:35:30.760Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 189,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 501,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.769Z",
+    "updated_at": "2026-03-31T02:35:30.769Z",
+    "batch_key": "2026Q2",
+    "platform": 6,
+    "work": 189,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 14,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 502,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.786Z",
+    "updated_at": "2026-03-31T02:35:30.786Z",
+    "batch_key": "2026Q2",
+    "platform": 9,
+    "work": 189,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 503,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.803Z",
+    "updated_at": "2026-03-31T02:35:30.803Z",
+    "batch_key": "2026Q2",
+    "platform": 4,
+    "work": 189,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 19,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 504,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.816Z",
+    "updated_at": "2026-03-31T02:35:30.816Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 189,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 505,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.831Z",
+    "updated_at": "2026-03-31T02:35:30.831Z",
+    "batch_key": "2026Q2",
+    "platform": 7,
+    "work": 189,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 506,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.849Z",
+    "updated_at": "2026-03-31T02:35:30.849Z",
+    "batch_key": "2026Q2",
+    "platform": 1,
+    "work": 190,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 30,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 507,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.860Z",
+    "updated_at": "2026-03-31T02:35:30.860Z",
+    "batch_key": "2026Q2",
+    "platform": 6,
+    "work": 190,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 14,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 508,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.870Z",
+    "updated_at": "2026-03-31T02:35:30.870Z",
+    "batch_key": "2026Q2",
+    "platform": 13,
+    "work": 190,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 2,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 509,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.882Z",
+    "updated_at": "2026-03-31T02:35:30.882Z",
+    "batch_key": "2026Q2",
+    "platform": 14,
+    "work": 190,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 6,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 510,
+  "fields": {
+    "created_at": "2026-03-31T02:35:30.897Z",
+    "updated_at": "2026-03-31T02:35:30.897Z",
+    "batch_key": "2026Q2",
+    "platform": 12,
+    "work": 190,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 13,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 511,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.029Z",
+    "updated_at": "2026-03-31T02:35:31.029Z",
+    "batch_key": "2026Q2",
+    "platform": 5,
+    "work": 190,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 512,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.088Z",
+    "updated_at": "2026-03-31T02:35:31.088Z",
+    "batch_key": "2026Q2",
+    "platform": 3,
+    "work": 190,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 18,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 513,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.103Z",
+    "updated_at": "2026-03-31T02:35:31.103Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 190,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 514,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.116Z",
+    "updated_at": "2026-03-31T02:35:31.116Z",
+    "batch_key": "2026Q2",
+    "platform": 7,
+    "work": 190,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 9,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 515,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.126Z",
+    "updated_at": "2026-03-31T02:35:31.126Z",
+    "batch_key": "2026Q2",
+    "platform": 16,
+    "work": 190,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 6,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 516,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.145Z",
+    "updated_at": "2026-03-31T02:35:31.145Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 191,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 517,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.181Z",
+    "updated_at": "2026-03-31T02:35:31.181Z",
+    "batch_key": "2026Q2",
+    "platform": 3,
+    "work": 192,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 18,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 518,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.212Z",
+    "updated_at": "2026-03-31T02:35:31.213Z",
+    "batch_key": "2026Q2",
+    "platform": 4,
+    "work": 194,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 19,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 519,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.225Z",
+    "updated_at": "2026-03-31T02:35:31.225Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 194,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 520,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.239Z",
+    "updated_at": "2026-03-31T02:35:31.239Z",
+    "batch_key": "2026Q2",
+    "platform": 8,
+    "work": 194,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 5,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 521,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.253Z",
+    "updated_at": "2026-03-31T02:35:31.253Z",
+    "batch_key": "2026Q2",
+    "platform": 11,
+    "work": 194,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 17,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 522,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.270Z",
+    "updated_at": "2026-03-31T02:35:31.270Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 195,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 523,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.292Z",
+    "updated_at": "2026-03-31T02:35:31.292Z",
+    "batch_key": "2026Q2",
+    "platform": 3,
+    "work": 196,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 18,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 524,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.308Z",
+    "updated_at": "2026-03-31T02:35:31.308Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 196,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+},
+{
+  "model": "common.platforminfo",
+  "pk": 525,
+  "fields": {
+    "created_at": "2026-03-31T02:35:31.328Z",
+    "updated_at": "2026-03-31T02:35:31.328Z",
+    "batch_key": "2026Q2",
+    "platform": 2,
+    "work": 197,
+    "delivery_start": "2026-04-07",
+    "delivery_end": "2026-03-07",
+    "delivery_count": 43,
+    "is_deleted": false
+  }
+}
+]

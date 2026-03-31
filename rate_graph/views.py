@@ -4,16 +4,18 @@ from datetime import date,time
 from .service import rate_graph_service as service
 from django.core.paginator import Paginator
 
+
 INFOS = {}
 # Create your views here.
 def chart_view(request):
     """棒グラフへ表示させるデータを準備."""
     platform_map = service.get_label_map()
-    year, month, day = utils.get_sysdate()
+    year, month, last_day = utils.get_sysdate()
+    year, month = int(year), int(month)
     season_delivery_count = service.get_season_delivery_count(year, month)
     
     # 現在の月日を準備（date型と比較用）
-    current_date = date(year, month, day)
+    current_date = date(year, month, last_day)
 
     season_data = service.get_current_season_data(current_date)
     # 割合の計算結果のリスト
@@ -33,7 +35,7 @@ def chart_view(request):
         "data": data,
         "color": color,
         "version": time(), # .pie_chart.jsがキャッシュを読み込まなにようにするための設定
-        "title": f"{year}年{utils.get_season(int(month))}アニメ：配信比率",
+        "title": f"{year}年{utils.get_season(int(month))}：最速配信比率",
         "select": "",
         "p_count": p_count,
     }
